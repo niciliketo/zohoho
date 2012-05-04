@@ -1,3 +1,6 @@
 require 'zohoho/connection'
 require 'zohoho/crm'
 require 'zohoho/authentication'
+require 'zohoho/zoho_object'
+require 'zohoho/lead'
+require 'zohoho/contact'

@@ -1,0 +1,35 @@
+module Zohoho
+  class Lead
+    @@myFields = [:company, :first_name, :last_name, :first_name, :last_name, :designation, :email, :phone, :fax, :mobile, :website, :lead_source, :lead_status, :industry, :no_of_employee, :annual_revenue, :email_opt_out, :skype_id, :salutation, :street, :city, :state, :zip_code, :country, :description]
+    attr_accessor *@@myFields
+
+
+    def xmlData
+
+      parse_data({'Company' => self.company, 'First Name' => self.first_name, 'Last Name' => self.last_name}, data_name)
+    end
+    #def serialize
+
+    def inspect
+      r = Hash.new
+      @@myFields.each  do |f|
+        r[f] = self.send(f) || ''
+      end
+      return r
+    end
+
+    def data_name
+      self.class.to_s.split('::').last.pluralize || ''
+    end
+    private
+    def parse_data(data, entry)
+      data = self.inspect
+      fl = data.map {|e| Hash['val', e[0].to_s.gsub('_',' ').titleize, 'content', e[1]]}
+      row = Hash['no', '1', 'FL', fl]
+      data = Hash['row', row]
+      XmlSimple.xml_out(data, :RootName => entry)
+      #XmlSimple.xml_out(self.inspect, :RootName => entry)
+    end
+  end
+
+end
