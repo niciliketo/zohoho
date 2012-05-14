@@ -1,6 +1,6 @@
 module Zohoho
   class Lead < ZohoObject
-    @@myFields = [:company, :first_name, :last_name, :designation, :email, :phone, :fax, :mobile, :website, :lead_source, :lead_status, :industry, :no_of_employees, :annual_revenue, :email_opt_out, :skype_id, :salutation, :street, :city, :state, :zip_code, :country, :description, :annual_revenue, :rating]
+    @@myFields = [:company, :first_name, :last_name, :designation, :email, :phone, :fax, :mobile, :website, :lead_source, :lead_status, :industry, :no_of_employees, :annual_revenue, :email_opt_out, :skype_id, :salutation, :street, :city, :state, :zip_code, :country, :description, :annual_revenue, :rating, :industry_md]
    attr_accessor *@@myFields
 
     def initialize(h={})
@@ -15,8 +15,9 @@ module Zohoho
       elsif sym == :skype_id
         r = "Skype ID"
       else
-        r = super
+        r = super(sym)
       end
+      puts r
       r
     end
   end
