@@ -8,7 +8,7 @@ module Zohoho
       self.class.to_s.split('::').last.pluralize || ''
     end
 
-    def inspect
+    def to_s
       sync_symbols_and_methods
       super
     end
@@ -31,7 +31,7 @@ module Zohoho
     def sync_symbols_and_methods
       # Wanted to give methods to set common attributes, but also flexibility to set a symbol too
       # We actually iterate the symbols, so this is a chacne to sync the two
-      self.map {|e| self[e[0]] = self.send(e[0]) }
+      self.map {|e| if (self.send(e[0])) then self[e[0]] = self.send(e[0]) end }
     end
   end
 end
