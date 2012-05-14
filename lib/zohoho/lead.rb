@@ -17,7 +17,6 @@ module Zohoho
       else
         r = super(sym)
       end
-      puts r
       r
     end
   end
