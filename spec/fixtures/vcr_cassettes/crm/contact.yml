@@ -1,247 +1,105 @@
 ---
 - !ruby/struct:VCR::HTTPInteraction
   request: !ruby/struct:VCR::Request
-    method: :post
-    uri: https://accounts.zoho.com:443/login?servicename=ZohoCRM&FROM_AGENT=true&LOGIN_ID=kentonwhite&PASSWORD=mopa3lwb
-    body: !!null 
-    headers: !!null 
+    method: :get
+    uri: https://crm.zoho.com:443/crm/private/json/Contacts/getSearchRecords?searchCondition=(Contact%20Name%7Cends%20with%7CDoe20)&selectColumns=All&authtoken=qwertyy1234567890qwerty12345678&scope=crmapi
+    body:
+    headers:
   response: !ruby/struct:VCR::Response
     status: !ruby/struct:VCR::ResponseStatus
       code: 200
       message: OK
     headers:
-      set-cookie:
-      - iamcsr=870d7d96-7c83-4372-bbd5-730a5e75e194; Path=/
-      - JSESSIONID=633BD92451E076DA45700115D4CD28B0; Path=/; Secure
-      content-type:
-      - text/html;charset=UTF-8
-      date:
-      - Fri, 20 May 2011 17:20:37 GMT
-      server:
-      - ZWS
-    body: ! '#
-
-      #Fri May 20 10:20:37 PDT 2011
-
-      GETUSERNAME=null
-
-      WARNING=null
-
-      PASS_EXPIRY=-1
-
-      TICKET=6af274f5fe5976b1f12e2b348f2e3de3
-
-      RESULT=TRUE
-
-'
+      !binary "c3RyaWN0LXRyYW5zcG9ydC1zZWN1cml0eQ==":
+      - !binary |-
+        bWF4LWFnZT00MzIwMDA=
+      !binary "c2V0LWNvb2tpZQ==":
+      - !binary |-
+        Y3JtY3NyPWRkNGMzNGVhLTEyNTQtNDE4Ni1hYzVlLWY5MzM2YjlmMmZkMzsg
+        UGF0aD0v
+      - !binary |-
+        YTYyMzIxNWYxNj00OyBQYXRoPS8=
+      !binary "cHJhZ21h":
+      - !binary |-
+        bm8tY2FjaGU=
+      !binary "Y2FjaGUtY29udHJvbA==":
+      - !binary |-
+        bm8tY2FjaGU=
+      !binary "ZXhwaXJlcw==":
+      - !binary |-
+        VGh1LCAwMSBKYW4gMTk3MCAwMDowMDowMCBHTVQ=
+      !binary "Y29udGVudC10eXBl":
+      - !binary |-
+        dGV4dC9wbGFpbjtjaGFyc2V0PXV0Zi04
+      !binary "Y29udGVudC1sZW5ndGg=":
+      - !binary |-
+        MTM1MA==
+      !binary "ZGF0ZQ==":
+      - !binary |-
+        RnJpLCAxOSBPY3QgMjAxMiAxNTo1Mzo0NCBHTVQ=
+      !binary "c2VydmVy":
+      - !binary |-
+        WkdT
+      !binary "cDNw":
+      - !binary |-
+        Q1A9IkNBTyBQU0EgT1VSIg==
+    body: ! "{\"response\":{\"result\":{\"Contacts\":{\"row\":{\"no\":\"1\",\"FL\":[{\"content\":\"232068000001517115\",\"val\":\"CONTACTID\"},{\"content\":\"232068000000035003\",\"val\":\"SMOWNERID\"},{\"content\":\"Nicholas
+      Martin\",\"val\":\"Contact Owner\"},{\"content\":\"Advertisement\",\"val\":\"Lead
+      Source\"},{\"content\":\"John\",\"val\":\"First Name\"},{\"content\":\"Doe20\",\"val\":\"Last
+      Name\"},{\"content\":\"232068000000043508\",\"val\":\"ACCOUNTID\"},{\"content\":\"Market
+      Dojo Ltd\",\"val\":\"Account Name\"},{\"content\":\"jdoe20@marketdojo.com\",\"val\":\"Email\"},{\"content\":\"Mr\",\"val\":\"Title\"},{\"content\":\"0123456789\",\"val\":\"Phone\"},{\"content\":\"0234567891\",\"val\":\"Mobile\"},{\"content\":\"232068000000035003\",\"val\":\"SMCREATORID\"},{\"content\":\"Nicholas
+      Martin\",\"val\":\"Created By\"},{\"content\":\"232068000000035003\",\"val\":\"MODIFIEDBY\"},{\"content\":\"Nicholas
+      Martin\",\"val\":\"Modified By\"},{\"content\":\"2012-10-19 16:48:43\",\"val\":\"Created
+      Time\"},{\"content\":\"2012-10-19 16:48:43\",\"val\":\"Modified Time\"},{\"content\":\"1
+      Mailing Street\",\"val\":\"Mailing Street\"},{\"content\":\"Mailing City\",\"val\":\"Mailing
+      City\"},{\"content\":\"Mailing State\",\"val\":\"Mailing State\"},{\"content\":\"AA1
+      AAA\",\"val\":\"Mailing Zip\"},{\"content\":\"UK\",\"val\":\"Mailing Country\"},{\"content\":\"false\",\"val\":\"Email
+      Opt Out\"},{\"content\":\"2012-10-19 16:48:43\",\"val\":\"Last Activity Time\"},{\"content\":\"false\",\"val\":\"Left
+      Company\"}]}}},\"uri\":\"/crm/private/json/Contacts/getSearchRecords\"}}\r\n"
     http_version: '1.1'
 - !ruby/struct:VCR::HTTPInteraction
   request: !ruby/struct:VCR::Request
     method: :get
-    uri: https://crm.zoho.com:443/crm/private/json/Contacts/getSearchRecords?searchCondition=(Contact%20Name%7Cends%20with%7CWhite)&selectColumns=All&apikey=&ticket=6af274f5fe5976b1f12e2b348f2e3de3
-    body: !!null 
-    headers: !!null 
+    uri: https://crm.zoho.com:443/crm/private/json/Contacts/getSearchRecords?searchCondition=(Contact%20Name%7Cends%20with%7CDepp)&selectColumns=All&authtoken=qwertyy1234567890qwerty12345678&scope=crmapi
+    body:
+    headers:
   response: !ruby/struct:VCR::Response
     status: !ruby/struct:VCR::ResponseStatus
       code: 200
       message: OK
     headers:
-      set-cookie:
-      - crmcsr=333f3bd0-76ef-4170-a205-ed8177eaef29; Path=/
-      pragma:
-      - no-cache
-      cache-control:
-      - no-cache
-      expires:
-      - Thu, 01 Jan 1970 00:00:00 GMT
-      content-type:
-      - text/plain;charset=utf-8
-      content-length:
-      - '1417'
-      date:
-      - Fri, 20 May 2011 17:20:38 GMT
-      server:
-      - ! '-'
-    body: ! '{"response":{"result":{"Contacts":{"row":[{"no":"1","FL":[{"content":"384023000000045001","val":"CONTACTID"},{"content":"384023000000042003","val":"SMOWNERID"},{"content":"kentonwhite","val":"Contact
-      Owner"},{"content":"Kenton","val":"First Name"},{"content":"White","val":"Last
-      Name"},{"content":"384023000000042003","val":"SMCREATORID"},{"content":"kentonwhite","val":"Created
-      By"},{"content":"384023000000042003","val":"MODIFIEDBY"},{"content":"kentonwhite","val":"Modified
-      By"},{"content":"2011-05-10 20:22:25","val":"Created Time"},{"content":"2011-05-10
-      20:22:25","val":"Modified Time"},{"content":"false","val":"Email Opt Out"},{"content":"Dr.","val":"Salutation"},{"content":"false","val":"Add
-      to QuickBooks"}]},{"no":"2","FL":[{"content":"384023000000047003","val":"CONTACTID"},{"content":"384023000000042003","val":"SMOWNERID"},{"content":"kentonwhite","val":"Contact
-      Owner"},{"content":"John","val":"First Name"},{"content":"White","val":"Last
-      Name"},{"content":"384023000000042003","val":"SMCREATORID"},{"content":"kentonwhite","val":"Created
-      By"},{"content":"384023000000042003","val":"MODIFIEDBY"},{"content":"kentonwhite","val":"Modified
-      By"},{"content":"2011-05-11 13:48:39","val":"Created Time"},{"content":"2011-05-11
-      13:48:39","val":"Modified Time"},{"content":"false","val":"Email Opt Out"},{"content":"false","val":"Add
-      to QuickBooks"}]}]}},"uri":"/crm/private/json/Contacts/getSearchRecords"}}
-
-'
-    http_version: '1.1'
-- !ruby/struct:VCR::HTTPInteraction
-  request: !ruby/struct:VCR::Request
-    method: :get
-    uri: https://crm.zoho.com:443/crm/private/json/Contacts/getSearchRecords?searchCondition=(Contact%20Name%7Cends%20with%7CDepp)&selectColumns=All&apikey=&ticket=6af274f5fe5976b1f12e2b348f2e3de3
-    body: !!null 
-    headers: !!null 
-  response: !ruby/struct:VCR::Response
-    status: !ruby/struct:VCR::ResponseStatus
-      code: 200
-      message: OK
-    headers:
-      set-cookie:
-      - crmcsr=3d210d39-6f1d-4ce8-b86e-feffa7f7bd3c; Path=/
-      - crmze=0; Path=/
-      pragma:
-      - no-cache
-      cache-control:
-      - no-cache
-      expires:
-      - Thu, 01 Jan 1970 00:00:00 GMT
-      content-type:
-      - text/plain;charset=utf-8
-      content-length:
-      - '130'
-      date:
-      - Fri, 20 May 2011 17:21:25 GMT
-      server:
-      - ! '-'
-      p3p:
-      - CP="CAO PSA OUR"
-    body: ! '{"response":{"nodata":{"message":"There is no data to show","code":"4422"},"uri":"/crm/private/json/Contacts/getSearchRecords"}}
-
-'
-    http_version: '1.1'
-- !ruby/struct:VCR::HTTPInteraction
-  request: !ruby/struct:VCR::Request
-    method: :post
-    uri: https://accounts.zoho.com:443/login
-    body: servicename=ZohoCRM&FROM_AGENT=true&LOGIN_ID=kentonwhite&PASSWORD=mopa3lwb
-    headers: !!null 
-  response: !ruby/struct:VCR::Response
-    status: !ruby/struct:VCR::ResponseStatus
-      code: 200
-      message: OK
-    headers:
-      set-cookie:
-      - iamcsr=f352a3ca-7258-4950-9b74-e730f22934e8; Path=/
-      - JSESSIONID=1CB481D72FFC00B786FBB625E73B2AA0; Path=/
-      - IAMAGENTTICKET_securedomain=false; Domain=.zoho.com; Path=/
-      - IAMAGENTTICKET_secureonly=true; Domain=.zoho.com; Path=/
-      - acctsze=0; Path=/
-      p3p:
-      - CP="CAO PSA OUR"
-      - CP="CAO PSA OUR"
-      content-type:
-      - text/html;charset=UTF-8
-      date:
-      - Mon, 19 Mar 2012 01:52:54 GMT
-      server:
-      - ZWS
-      transfer-encoding:
-      - chunked
-      strict-transport-security:
-      - max-age=604800
-    body: ! '#
-
-      #Sun Mar 18 18:52:54 PDT 2012
-
-      GETUSERNAME=null
-
-      WARNING=null
-
-      PASS_EXPIRY=-1
-
-      TICKET=fb6287e4825d5fc1e18535cbbb11a61a
-
-      RESULT=TRUE
-
-'
-    http_version: '1.1'
-- !ruby/struct:VCR::HTTPInteraction
-  request: !ruby/struct:VCR::Request
-    method: :get
-    uri: https://crm.zoho.com:443/crm/private/json/Contacts/getSearchRecords?searchCondition=(Contact%20Name%7Cends%20with%7CWhite)&selectColumns=All&apikey=L-PvsrDNn9EIW2phA3vzp9YuL5REECogkQaMGWeIdlI%24&ticket=fb6287e4825d5fc1e18535cbbb11a61a
-    body: !!null 
-    headers: !!null 
-  response: !ruby/struct:VCR::Response
-    status: !ruby/struct:VCR::ResponseStatus
-      code: 200
-      message: OK
-    headers:
-      set-cookie:
-      - crmcsr=9de1168e-fa09-46b1-afff-f219adf8fbbf; Path=/
-      - crmzoze=11; Path=/
-      pragma:
-      - no-cache
-      cache-control:
-      - no-cache
-      expires:
-      - Thu, 01 Jan 1970 00:00:00 GMT
-      content-type:
-      - text/plain;charset=utf-8
-      content-length:
-      - '1417'
-      date:
-      - Mon, 19 Mar 2012 01:52:56 GMT
-      server:
-      - ZGS
-      p3p:
-      - CP="CAO PSA OUR"
-      strict-transport-security:
-      - max-age=604800
-    body: ! "{\"response\":{\"result\":{\"Contacts\":{\"row\":[{\"no\":\"1\",\"FL\":[{\"content\":\"384023000000045001\",\"val\":\"CONTACTID\"},{\"content\":\"384023000000042003\",\"val\":\"SMOWNERID\"},{\"content\":\"kentonwhite\",\"val\":\"Contact
-      Owner\"},{\"content\":\"Kenton\",\"val\":\"First Name\"},{\"content\":\"White\",\"val\":\"Last
-      Name\"},{\"content\":\"384023000000042003\",\"val\":\"SMCREATORID\"},{\"content\":\"kentonwhite\",\"val\":\"Created
-      By\"},{\"content\":\"384023000000042003\",\"val\":\"MODIFIEDBY\"},{\"content\":\"kentonwhite\",\"val\":\"Modified
-      By\"},{\"content\":\"2011-05-10 20:22:25\",\"val\":\"Created Time\"},{\"content\":\"2011-05-10
-      20:22:25\",\"val\":\"Modified Time\"},{\"content\":\"false\",\"val\":\"Email
-      Opt Out\"},{\"content\":\"Dr.\",\"val\":\"Salutation\"},{\"content\":\"false\",\"val\":\"Add
-      to QuickBooks\"}]},{\"no\":\"2\",\"FL\":[{\"content\":\"384023000000047003\",\"val\":\"CONTACTID\"},{\"content\":\"384023000000042003\",\"val\":\"SMOWNERID\"},{\"content\":\"kentonwhite\",\"val\":\"Contact
-      Owner\"},{\"content\":\"John\",\"val\":\"First Name\"},{\"content\":\"White\",\"val\":\"Last
-      Name\"},{\"content\":\"384023000000042003\",\"val\":\"SMCREATORID\"},{\"content\":\"kentonwhite\",\"val\":\"Created
-      By\"},{\"content\":\"384023000000042003\",\"val\":\"MODIFIEDBY\"},{\"content\":\"kentonwhite\",\"val\":\"Modified
-      By\"},{\"content\":\"2011-05-11 13:48:39\",\"val\":\"Created Time\"},{\"content\":\"2011-05-11
-      13:48:39\",\"val\":\"Modified Time\"},{\"content\":\"false\",\"val\":\"Email
-      Opt Out\"},{\"content\":\"false\",\"val\":\"Add to QuickBooks\"}]}]}},\"uri\":\"/crm/private/json/Contacts/getSearchRecords\"}}\r\n"
-    http_version: '1.1'
-- !ruby/struct:VCR::HTTPInteraction
-  request: !ruby/struct:VCR::Request
-    method: :get
-    uri: https://crm.zoho.com:443/crm/private/json/Contacts/getSearchRecords?searchCondition=(Contact%20Name%7Cends%20with%7CDepp)&selectColumns=All&apikey=L-PvsrDNn9EIW2phA3vzp9YuL5REECogkQaMGWeIdlI%24&ticket=fb6287e4825d5fc1e18535cbbb11a61a
-    body: !!null 
-    headers: !!null 
-  response: !ruby/struct:VCR::Response
-    status: !ruby/struct:VCR::ResponseStatus
-      code: 200
-      message: OK
-    headers:
-      set-cookie:
-      - crmcsr=838745f9-13bc-490d-98d5-d750dff19f79; Path=/
-      - crmzoze=4; Path=/
-      pragma:
-      - no-cache
-      cache-control:
-      - no-cache
-      expires:
-      - Thu, 01 Jan 1970 00:00:00 GMT
-      content-type:
-      - text/plain;charset=utf-8
-      content-length:
-      - '738'
-      date:
-      - Mon, 19 Mar 2012 01:53:01 GMT
-      server:
-      - ZGS
-      p3p:
-      - CP="CAO PSA OUR"
-      strict-transport-security:
-      - max-age=604800
-    body: ! "{\"response\":{\"result\":{\"Contacts\":{\"row\":{\"no\":\"1\",\"FL\":[{\"content\":\"384023000000055001\",\"val\":\"CONTACTID\"},{\"content\":\"384023000000042003\",\"val\":\"SMOWNERID\"},{\"content\":\"kentonwhite\",\"val\":\"Contact
-      Owner\"},{\"content\":\"Johnny\",\"val\":\"First Name\"},{\"content\":\"Depp\",\"val\":\"Last
-      Name\"},{\"content\":\"384023000000042003\",\"val\":\"SMCREATORID\"},{\"content\":\"kentonwhite\",\"val\":\"Created
-      By\"},{\"content\":\"384023000000042003\",\"val\":\"MODIFIEDBY\"},{\"content\":\"kentonwhite\",\"val\":\"Modified
-      By\"},{\"content\":\"2011-05-20 17:25:05\",\"val\":\"Created Time\"},{\"content\":\"2011-05-20
-      17:25:05\",\"val\":\"Modified Time\"},{\"content\":\"false\",\"val\":\"Email
-      Opt Out\"},{\"content\":\"false\",\"val\":\"Add to QuickBooks\"}]}}},\"uri\":\"/crm/private/json/Contacts/getSearchRecords\"}}\r\n"
+      !binary "c3RyaWN0LXRyYW5zcG9ydC1zZWN1cml0eQ==":
+      - !binary |-
+        bWF4LWFnZT00MzIwMDA=
+      !binary "c2V0LWNvb2tpZQ==":
+      - !binary |-
+        Y3JtY3NyPTlkZjhjNTFmLTRkYTUtNDU3My04OWJlLThlMDI2NDZlYmQxNTsg
+        UGF0aD0v
+      - !binary |-
+        YTYyMzIxNWYxNj04OyBQYXRoPS8=
+      !binary "cHJhZ21h":
+      - !binary |-
+        bm8tY2FjaGU=
+      !binary "Y2FjaGUtY29udHJvbA==":
+      - !binary |-
+        bm8tY2FjaGU=
+      !binary "ZXhwaXJlcw==":
+      - !binary |-
+        VGh1LCAwMSBKYW4gMTk3MCAwMDowMDowMCBHTVQ=
+      !binary "Y29udGVudC10eXBl":
+      - !binary |-
+        dGV4dC9wbGFpbjtjaGFyc2V0PXV0Zi04
+      !binary "Y29udGVudC1sZW5ndGg=":
+      - !binary |-
+        MTMw
+      !binary "ZGF0ZQ==":
+      - !binary |-
+        RnJpLCAxOSBPY3QgMjAxMiAxNTo1Mzo0OSBHTVQ=
+      !binary "c2VydmVy":
+      - !binary |-
+        WkdT
+      !binary "cDNw":
+      - !binary |-
+        Q1A9IkNBTyBQU0EgT1VSIg==
+    body: ! "{\"response\":{\"nodata\":{\"message\":\"There is no data to show\",\"code\":\"4422\"},\"uri\":\"/crm/private/json/Contacts/getSearchRecords\"}}\r\n"
     http_version: '1.1'

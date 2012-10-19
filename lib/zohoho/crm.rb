@@ -21,6 +21,12 @@ module Zohoho
       contacts.first
     end
 
+    def account(name)
+      accounts = find_accounts_by_name(name)
+      accounts.first
+    end
+
+
     def lead(name)
       first_name, last_name = parse_name(name)
       leads = find_leads_by_last_name(last_name)
@@ -97,6 +103,10 @@ module Zohoho
     def find_leads_by_last_name(last_name)
       search_condition = "(Lead Name|ends with|#{last_name})"
       @conn.call('Leads', 'getSearchRecords', :searchCondition => search_condition, :selectColumns => 'All')
+    end
+    def find_accounts_by_name(name)
+      search_condition = "(Account Name|ends with|#{name})"
+      @conn.call('Accounts', 'getSearchRecords', :searchCondition => search_condition, :selectColumns => 'All')
     end
   end
 end

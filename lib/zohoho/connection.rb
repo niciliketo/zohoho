@@ -45,7 +45,6 @@ module Zohoho
     end
 
     def parse_raw_post(raw)
-      puts raw
       if raw['response']['result'].nil?
         return Hash[raw]['response']['error']
       else
