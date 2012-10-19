@@ -5,7 +5,8 @@ module Zohoho
     end
 
     def data_name
-      self.class.to_s.split('::').last.pluralize || ''
+      #self.class.to_s.split('::').last.pluralize || '' - not without RoR, and s should be enough
+      self.class.to_s.split('::').last + "s" || ''
     end
 
 

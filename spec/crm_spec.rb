@@ -42,4 +42,16 @@ describe "Zohoho::CRM" do
     end
     @note.should == "232068000001519001"
   end
+
+  it 'should add Charlie Sheen as a new contact' do
+    VCR.use_cassette('add_complicated_contact', :record => :new_episodes) do
+      contact = Zohoho::Contact.new
+      contact.keys.each {|k| contact[k] = k} #Put the keyname as the val, so we can test all fields received OK
+      contact['ACCOUNTID'] = nil
+      contact['First Name'] = 'Charlie'
+      contact['Last Name'] = 'Sheen'
+      @res = @crm.add_object(contact)
+    end
+    @res.should == "232068000001518003"
+  end
 end
