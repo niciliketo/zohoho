@@ -1,6 +1,6 @@
-module Zohoho
-  class Contact < ZohoObject
-    @@myFields = ["ACCOUNTID", "Contact Owner", "Lead Source", "First Name", "Last Name", "Email", "Title", "Department", "Phone", "Home Phone", "Fax", "Mobile", "Date of Birth", "Assistant", "Asst Phone", "Reports To", "Mailing Street", "Other Street", "Mailing City", "Other City", "Mailing State", "Other State", "Mailing Zip", "Other Zip", "Mailing Country", "Description", "Skype ID", "Salutation", "Email3", "Registration Status", "Email Opt Out", "Secondary Email"]
+  module Zohoho
+  class Account < ZohoObject
+    @@myFields = ["ACCOUNTID", "Account Name", "Phone", "Fax", "Employees", "Billing Street", "Shipping Street", "Billing City", "Shipping City", "Billing State", "Shipping State", "Billing Code", "Shipping Code", "Billing Country","Shipping Country", "Description", "Agreement", "Description", "Website", "Ownership", "Annual Revenue" ]
 
     def initialize(h={})
       @@myFields.each do |f|
