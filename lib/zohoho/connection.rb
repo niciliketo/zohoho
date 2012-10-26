@@ -19,14 +19,12 @@ module Zohoho
       query.merge!({ :authtoken => self.auth_token, :scope => "#{@service_name.downcase}api" })
 
       url = [zoho_uri, entry, api_method].join('/')
-
       case http_method
       when :get
         raw = JSON.parse(self.class.get(url, :query => query).parsed_response)
         parse_raw_get(raw, entry)
       when :post
         raw = JSON.parse(self.class.post(url, :body => query).parsed_response)
-
         parse_raw_post(raw)
       else
         raise "#{http_method} is not a recognized http method"

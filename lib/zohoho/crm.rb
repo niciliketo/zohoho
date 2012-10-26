@@ -37,7 +37,11 @@ module Zohoho
       leads.first
     end
     def add_object(zObject)
-      record = @conn.call(zObject.data_name, 'insertRecords', {:xmlData => zObject.xmlData, :newFormat => 1}, :post)
+      record = @conn.call(zObject.data_name, 'insertRecords', {:xmlData => zObject.xmlData, :newFormat => 1, :wfTrigger=>'true'}, :post)
+      record['Id']
+    end
+    def update_object(id, zObject)
+      record = @conn.call(zObject.data_name, 'updateRecords', {:id => id, :xmlData => zObject.xmlData, :newFormat => 1, :wfTrigger=>'true'}, :post)
       record['Id']
     end
     def add_contact(name)
