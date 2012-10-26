@@ -5,7 +5,7 @@
 
 Gem::Specification.new do |s|
   s.name = %q{zohoho}
-  s.version = "0.1.3"
+  s.version = "0.1.4"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["KentonWhite"]
@@ -27,14 +27,20 @@ Gem::Specification.new do |s|
     "VERSION",
     "autotest/discover.rb",
     "lib/zohoho.rb",
+    "lib/zohoho/account.rb",
+    "lib/zohoho/authentication.rb",
     "lib/zohoho/connection.rb",
+    "lib/zohoho/contact.rb",
     "lib/zohoho/crm.rb",
+    "lib/zohoho/lead.rb",
+    "lib/zohoho/zoho_object.rb",
     "spec/connection_spec.rb",
     "spec/crm_spec.rb",
     "spec/fixtures/vcr_cassettes/connection/call.yml",
-    "spec/fixtures/vcr_cassettes/connection/ticket.yml",
     "spec/fixtures/vcr_cassettes/crm/add_contact.yml",
+    "spec/fixtures/vcr_cassettes/crm/add_complicated_contact.yml",
     "spec/fixtures/vcr_cassettes/crm/contact.yml",
+    "spec/fixtures/vcr_cassettes/crm/contact_single.yml",
     "spec/fixtures/vcr_cassettes/crm/note.yml",
     "spec/spec_helper.rb",
     "zohoho.gemspec"
