@@ -3,28 +3,28 @@ require File.expand_path(File.dirname(__FILE__) + '/spec_helper')
 describe "Zohoho::CRM" do
 
   before :each do
-    @apikey = "qwertyy1234567890qwerty12345678"
+    @apikey =  "qwertyy1234567890qwerty12345678"
     @crm = Zohoho::Crm.new(@apikey)
     vcr_config 'crm'
   end
 
   it 'should get contact John Doe20' do
     VCR.use_cassette('contact', :record => :new_episodes) do
-      @contact = @crm.contact "John Doe20"
+      @contact = @crm.contact_with_name "John Doe20"
     end
     @contact["CONTACTID"].should == "232068000001517115"
   end
 
   it 'should get single name contact Doe3' do
     VCR.use_cassette('contact_single', :record => :new_episodes) do
-      @contact = @crm.contact "Doe3"
+      @contact = @crm.contact_with_name "Doe3"
     end
     @contact["CONTACTID"].should == "232068000001517013"
   end
 
   it 'should return nil for Johnny Depp' do
     VCR.use_cassette('contact', :record => :new_episodes) do
-      @contact = @crm.contact "Johnny Depp"
+      @contact = @crm.contact_with_name "Johnny Depp"
     end
     @contact.should == nil
   end
@@ -53,5 +53,18 @@ describe "Zohoho::CRM" do
       @res = @crm.add_object(contact)
     end
     @res.should == "232068000001518003"
+  end
+
+  it 'should get contact by id' do
+    VCR.use_cassette('get_contact_by_id', :record => :new_episodes) do
+      @contact = @crm.contact_with_id "232068000001617005"
+    end
+    @contact["First Name"].should == "Nic"
+  end
+  it 'should get account by id' do
+    VCR.use_cassette('get_account_by_id', :record => :new_episodes) do
+      @account = @crm.account_with_id "232068000001622022"
+    end
+    @account["Account Name"].should == "Meerkat Dojo Participant"
   end
 end

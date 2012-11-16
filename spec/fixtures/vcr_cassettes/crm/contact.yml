@@ -3,8 +3,8 @@
   request: !ruby/struct:VCR::Request
     method: :get
     uri: https://crm.zoho.com:443/crm/private/json/Contacts/getSearchRecords?searchCondition=(Contact%20Name%7Cends%20with%7CDoe20)&selectColumns=All&authtoken=qwertyy1234567890qwerty12345678&scope=crmapi
-    body:
-    headers:
+    body: 
+    headers: 
   response: !ruby/struct:VCR::Response
     status: !ruby/struct:VCR::ResponseStatus
       code: 200
@@ -61,8 +61,8 @@
   request: !ruby/struct:VCR::Request
     method: :get
     uri: https://crm.zoho.com:443/crm/private/json/Contacts/getSearchRecords?searchCondition=(Contact%20Name%7Cends%20with%7CDepp)&selectColumns=All&authtoken=qwertyy1234567890qwerty12345678&scope=crmapi
-    body:
-    headers:
+    body: 
+    headers: 
   response: !ruby/struct:VCR::Response
     status: !ruby/struct:VCR::ResponseStatus
       code: 200
@@ -95,6 +95,104 @@
       !binary "ZGF0ZQ==":
       - !binary |-
         RnJpLCAxOSBPY3QgMjAxMiAxNTo1Mzo0OSBHTVQ=
+      !binary "c2VydmVy":
+      - !binary |-
+        WkdT
+      !binary "cDNw":
+      - !binary |-
+        Q1A9IkNBTyBQU0EgT1VSIg==
+    body: ! "{\"response\":{\"nodata\":{\"message\":\"There is no data to show\",\"code\":\"4422\"},\"uri\":\"/crm/private/json/Contacts/getSearchRecords\"}}\r\n"
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :get
+    uri: https://crm.zoho.com:443/crm/private/json/Contacts/getSearchRecords?searchCondition=(Contact%20Name%7Cends%20with%7CDoe20)&selectColumns=All&authtoken=c6f9c8e02afef7d62dbbf2fb216c6a7a&scope=crmapi
+    body: 
+    headers: 
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: OK
+    headers:
+      !binary "c3RyaWN0LXRyYW5zcG9ydC1zZWN1cml0eQ==":
+      - !binary |-
+        bWF4LWFnZT00MzIwMDA=
+      !binary "c2V0LWNvb2tpZQ==":
+      - !binary |-
+        SlNFU1NJT05JRD0yOTdENjUyRDk5RURBMjMzQUQxOEE4QjRDREJFMTc0Mjsg
+        UGF0aD0vY3Jt
+      - !binary |-
+        Y3JtY3NyPTg2ZGE2NjEzLWUzZjAtNDYyNy04YTgxLTQ5YzY0MDZiZTVhMzsg
+        UGF0aD0v
+      - !binary |-
+        YTYyMzIxNWYxNj0zOyBQYXRoPS8=
+      !binary "cHJhZ21h":
+      - !binary |-
+        bm8tY2FjaGU=
+      !binary "Y2FjaGUtY29udHJvbA==":
+      - !binary |-
+        bm8tY2FjaGU=
+      !binary "ZXhwaXJlcw==":
+      - !binary |-
+        VGh1LCAwMSBKYW4gMTk3MCAwMDowMDowMCBHTVQ=
+      !binary "Y29udGVudC10eXBl":
+      - !binary |-
+        dGV4dC9wbGFpbjtjaGFyc2V0PXV0Zi04
+      !binary "Y29udGVudC1sZW5ndGg=":
+      - !binary |-
+        MTMw
+      !binary "ZGF0ZQ==":
+      - !binary |-
+        RnJpLCAxNiBOb3YgMjAxMiAxNjowNDowNiBHTVQ=
+      !binary "c2VydmVy":
+      - !binary |-
+        WkdT
+      !binary "cDNw":
+      - !binary |-
+        Q1A9IkNBTyBQU0EgT1VSIg==
+    body: ! "{\"response\":{\"nodata\":{\"message\":\"There is no data to show\",\"code\":\"4422\"},\"uri\":\"/crm/private/json/Contacts/getSearchRecords\"}}\r\n"
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :get
+    uri: https://crm.zoho.com:443/crm/private/json/Contacts/getSearchRecords?searchCondition=(Contact%20Name%7Cends%20with%7CDepp)&selectColumns=All&authtoken=c6f9c8e02afef7d62dbbf2fb216c6a7a&scope=crmapi
+    body: 
+    headers: 
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: OK
+    headers:
+      !binary "c3RyaWN0LXRyYW5zcG9ydC1zZWN1cml0eQ==":
+      - !binary |-
+        bWF4LWFnZT00MzIwMDA=
+      !binary "c2V0LWNvb2tpZQ==":
+      - !binary |-
+        SlNFU1NJT05JRD1DRTk2ODgwRUI3Qzk4RUU3RkJERDEzQkFFQjAzQjNDQzsg
+        UGF0aD0vY3Jt
+      - !binary |-
+        Y3JtY3NyPTM0OTc1MGM4LTg5OGUtNDExNy1hNGJjLTc4OGMwODc0NzMyMzsg
+        UGF0aD0v
+      - !binary |-
+        YTYyMzIxNWYxNj02OyBQYXRoPS8=
+      !binary "cHJhZ21h":
+      - !binary |-
+        bm8tY2FjaGU=
+      !binary "Y2FjaGUtY29udHJvbA==":
+      - !binary |-
+        bm8tY2FjaGU=
+      !binary "ZXhwaXJlcw==":
+      - !binary |-
+        VGh1LCAwMSBKYW4gMTk3MCAwMDowMDowMCBHTVQ=
+      !binary "Y29udGVudC10eXBl":
+      - !binary |-
+        dGV4dC9wbGFpbjtjaGFyc2V0PXV0Zi04
+      !binary "Y29udGVudC1sZW5ndGg=":
+      - !binary |-
+        MTMw
+      !binary "ZGF0ZQ==":
+      - !binary |-
+        RnJpLCAxNiBOb3YgMjAxMiAxNjowNDoxMSBHTVQ=
       !binary "c2VydmVy":
       - !binary |-
         WkdT

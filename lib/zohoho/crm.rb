@@ -11,7 +11,7 @@ module Zohoho
       @conn = Zohoho::Connection.new 'CRM', auth_token
     end
 
-    def contact(name)
+    def contact_with_name(name)
       first_name, last_name = parse_name(name)
       contacts = find_contacts_by_last_name(last_name)
       contacts.select! {|c|
@@ -20,14 +20,19 @@ module Zohoho
       }
       contacts.first
     end
-
-    def account(name)
+    def contact_with_id(id)
+     find_contact_by_id(id).first
+    end
+    def account_with_id(id)
+      find_account_by_id(id).first
+    end
+    def account_with_name(name)
       accounts = find_accounts_by_name(name)
       accounts.first
     end
 
 
-    def lead(name)
+    def lead_with_name(name)
       first_name, last_name = parse_name(name)
       leads = find_leads_by_last_name(last_name)
       leads.select! {|l|
@@ -104,6 +109,9 @@ module Zohoho
       search_condition = "(Contact Name|ends with|#{last_name})"
       @conn.call('Contacts', 'getSearchRecords', :searchCondition => search_condition, :selectColumns => 'All')
     end
+    def find_contact_by_id(id)
+      @conn.call('Contacts', 'getRecordById', :id => id, :selectColumns => 'All')
+    end
     def find_leads_by_last_name(last_name)
       search_condition = "(Lead Name|ends with|#{last_name})"
       @conn.call('Leads', 'getSearchRecords', :searchCondition => search_condition, :selectColumns => 'All')
@@ -111,6 +119,9 @@ module Zohoho
     def find_accounts_by_name(name)
       search_condition = "(Account Name|ends with|#{name})"
       @conn.call('Accounts', 'getSearchRecords', :searchCondition => search_condition, :selectColumns => 'All')
+    end
+    def find_account_by_id(id)
+      @conn.call('Accounts', 'getRecordById', :id => id, :selectColumns => 'All')
     end
   end
 end
