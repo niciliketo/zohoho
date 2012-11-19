@@ -3,7 +3,7 @@ require File.expand_path(File.dirname(__FILE__) + '/spec_helper')
 describe "Zohoho::CRM" do
 
   before :each do
-    @apikey =  "qwertyy1234567890qwerty12345678"
+    @apikey = "qwertyy1234567890qwerty12345678"
     @crm = Zohoho::Crm.new(@apikey)
     vcr_config 'crm'
   end
@@ -61,6 +61,13 @@ describe "Zohoho::CRM" do
     end
     @contact["First Name"].should == "Nic"
   end
+  it 'should get contact by email' do
+    VCR.use_cassette('get_contact_by_email', :record => :new_episodes) do
+      @contact = @crm.contact_with_email "jsmith@marketdojo.com"
+    end
+    @contact["First Name"].should == "John"
+  end
+
   it 'should get account by id' do
     VCR.use_cassette('get_account_by_id', :record => :new_episodes) do
       @account = @crm.account_with_id "232068000001622022"

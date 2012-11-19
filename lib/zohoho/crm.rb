@@ -23,6 +23,10 @@ module Zohoho
     def contact_with_id(id)
      find_contact_by_id(id).first
     end
+    def contact_with_email(email)
+      contacts = find_contacts_by_email(email)
+      contacts.first
+    end
     def account_with_id(id)
       find_account_by_id(id).first
     end
@@ -107,6 +111,10 @@ module Zohoho
 
     def find_contacts_by_last_name(last_name)
       search_condition = "(Contact Name|ends with|#{last_name})"
+      @conn.call('Contacts', 'getSearchRecords', :searchCondition => search_condition, :selectColumns => 'All')
+    end
+    def find_contacts_by_email(email)
+      search_condition = "(Email|ends with|#{email})"
       @conn.call('Contacts', 'getSearchRecords', :searchCondition => search_condition, :selectColumns => 'All')
     end
     def find_contact_by_id(id)
