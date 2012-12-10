@@ -3,22 +3,20 @@
   request: !ruby/struct:VCR::Request
     method: :post
     uri: https://crm.zoho.com:443/crm/private/json/Contacts/insertRecords
-    body: xmlData=%3CContacts%3E%0A%20%20%3Crow%20no%3D%221%22%3E%0A%20%20%20%20%3CFL%20val%3D%22First%20Name%22%3EJohnny%3C%2FFL%3E%0A%20%20%20%20%3CFL%20val%3D%22Last%20Name%22%3EDepp%3C%2FFL%3E%0A%20%20%3C%2Frow%3E%0A%3C%2FContacts%3E%0A&newFormat=1&authtoken=qwertyy1234567890qwerty12345678&scope=crmapi
+    body: xmlData=%3CContacts%3E%0A%20%20%3Crow%20no%3D%221%22%3E%0A%20%20%20%20%3CFL%20val%3D%22First%20Name%22%3EJohnny%3C%2FFL%3E%0A%20%20%20%20%3CFL%20val%3D%22Last%20Name%22%3EDepp%3C%2FFL%3E%0A%20%20%3C%2Frow%3E%0A%3C%2FContacts%3E%0A&newFormat=1&authtoken=dummy_key_123&scope=crmapi
     headers:
   response: !ruby/struct:VCR::Response
     status: !ruby/struct:VCR::ResponseStatus
       code: 200
       message: OK
     headers:
-      !binary "c3RyaWN0LXRyYW5zcG9ydC1zZWN1cml0eQ==":
-      - !binary |-
-        bWF4LWFnZT00MzIwMDA=
       !binary "c2V0LWNvb2tpZQ==":
       - !binary |-
-        Y3JtY3NyPTcwYWM4NmY2LTMyZTMtNGVmNS1hYTk2LTk3YTkzZWZiYWFlYjsg
-        UGF0aD0v
+        SlNFU1NJT05JRD00NURGMURCRTQ4RkVBRDM2NjA4ODc1QTVCMzI3NUYwMTsg
+        UGF0aD0vY3Jt
       - !binary |-
-        YTYyMzIxNWYxNj0xMjsgUGF0aD0v
+        Y3JtY3NyPTQzMDBiNTY0LTkyOWItNDRlZi1hY2ZhLTZmMmU1NTkyYmM5ZDsg
+        UGF0aD0v
       !binary "cHJhZ21h":
       - !binary |-
         bm8tY2FjaGU=
@@ -30,21 +28,18 @@
         VGh1LCAwMSBKYW4gMTk3MCAwMDowMDowMCBHTVQ=
       !binary "Y29udGVudC10eXBl":
       - !binary |-
-        dGV4dC9wbGFpbjtjaGFyc2V0PXV0Zi04
+        YXBwbGljYXRpb24vanNvbjtjaGFyc2V0PXV0Zi04
       !binary "Y29udGVudC1sZW5ndGg=":
       - !binary |-
         Mzc3
       !binary "ZGF0ZQ==":
       - !binary |-
-        RnJpLCAxOSBPY3QgMjAxMiAxNTo1Mzo1MCBHTVQ=
+        TW9uLCAxMCBEZWMgMjAxMiAxNjozOToyMyBHTVQ=
       !binary "c2VydmVy":
       - !binary |-
         WkdT
-      !binary "cDNw":
-      - !binary |-
-        Q1A9IkNBTyBQU0EgT1VSIg==
-    body: ! "{\"response\":{\"result\":{\"message\":\"Record(s) added successfully\",\"recorddetail\":{\"FL\":[{\"content\":\"232068000001518001\",\"val\":\"Id\"},{\"content\":\"2012-10-19
-      16:53:51\",\"val\":\"Created Time\"},{\"content\":\"2012-10-19 16:53:51\",\"val\":\"Modified
+    body: ! "{\"response\":{\"result\":{\"message\":\"Record(s) added successfully\",\"recorddetail\":{\"FL\":[{\"content\":\"232068000001741001\",\"val\":\"Id\"},{\"content\":\"2012-12-10
+      16:39:23\",\"val\":\"Created Time\"},{\"content\":\"2012-12-10 16:39:23\",\"val\":\"Modified
       Time\"},{\"content\":\"Martin\",\"val\":\"Created By\"},{\"content\":\"Martin\",\"val\":\"Modified
       By\"}]}},\"uri\":\"/crm/private/json/Contacts/insertRecords\"}}\r\n"
     http_version: '1.1'

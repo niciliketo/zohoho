@@ -21,10 +21,14 @@ module Zohoho
       url = [zoho_uri, entry, api_method].join('/')
       case http_method
       when :get
-        raw = JSON.parse(self.class.get(url, :query => query).parsed_response)
+        res = self.class.get(url, :query => query).parsed_response
+        res = res.to_json if res.kind_of?(Hash)
+        raw = JSON.parse(res)
         parse_raw_get(raw, entry)
       when :post
-        raw = JSON.parse(self.class.post(url, :body => query).parsed_response)
+        res = self.class.post(url, :body => query)
+        res = res.to_json if res.kind_of?(Hash)
+        raw = JSON.parse(res)
         parse_raw_post(raw)
       else
         raise "#{http_method} is not a recognized http method"

@@ -2,83 +2,23 @@
 - !ruby/struct:VCR::HTTPInteraction
   request: !ruby/struct:VCR::Request
     method: :get
-    uri: https://crm.zoho.com:443/crm/private/json/Contacts/getSearchRecords?searchCondition=(Contact%20Name%7Cends%20with%7CDoe3)&selectColumns=All&authtoken=qwertyy1234567890qwerty12345678&scope=crmapi
-    body: 
-    headers: 
+    uri: https://crm.zoho.com:443/crm/private/json/Contacts/getSearchRecords?searchCondition=(Contact%20Name%7Cends%20with%7CDoe3)&selectColumns=All&authtoken=dummy_key_123&scope=crmapi
+    body:
+    headers:
   response: !ruby/struct:VCR::Response
     status: !ruby/struct:VCR::ResponseStatus
       code: 200
       message: OK
     headers:
-      !binary "c3RyaWN0LXRyYW5zcG9ydC1zZWN1cml0eQ==":
-      - !binary |-
-        bWF4LWFnZT00MzIwMDA=
       !binary "c2V0LWNvb2tpZQ==":
       - !binary |-
-        Y3JtY3NyPTZiMzQ4NDQyLWY5MWItNDE5MS1hZmUwLWIxYWI4MmU3MGRlNzsg
-        UGF0aD0v
-      - !binary |-
-        YTYyMzIxNWYxNj00OyBQYXRoPS8=
-      !binary "cHJhZ21h":
-      - !binary |-
-        bm8tY2FjaGU=
-      !binary "Y2FjaGUtY29udHJvbA==":
-      - !binary |-
-        bm8tY2FjaGU=
-      !binary "ZXhwaXJlcw==":
-      - !binary |-
-        VGh1LCAwMSBKYW4gMTk3MCAwMDowMDowMCBHTVQ=
-      !binary "Y29udGVudC10eXBl":
-      - !binary |-
-        dGV4dC9wbGFpbjtjaGFyc2V0PXV0Zi04
-      !binary "Y29udGVudC1sZW5ndGg=":
-      - !binary |-
-        MTMwOQ==
-      !binary "ZGF0ZQ==":
-      - !binary |-
-        RnJpLCAxOSBPY3QgMjAxMiAxNjowMTo1OCBHTVQ=
-      !binary "c2VydmVy":
-      - !binary |-
-        WkdT
-      !binary "cDNw":
-      - !binary |-
-        Q1A9IkNBTyBQU0EgT1VSIg==
-    body: ! "{\"response\":{\"result\":{\"Contacts\":{\"row\":{\"no\":\"1\",\"FL\":[{\"content\":\"232068000001517013\",\"val\":\"CONTACTID\"},{\"content\":\"232068000000035003\",\"val\":\"SMOWNERID\"},{\"content\":\"Nicholas
-      Martin\",\"val\":\"Contact Owner\"},{\"content\":\"Advertisement\",\"val\":\"Lead
-      Source\"},{\"content\":\"Doe3\",\"val\":\"Last Name\"},{\"content\":\"232068000000043508\",\"val\":\"ACCOUNTID\"},{\"content\":\"Market
-      Dojo Ltd\",\"val\":\"Account Name\"},{\"content\":\"jdoe@marketdojo.com\",\"val\":\"Email\"},{\"content\":\"Mr\",\"val\":\"Title\"},{\"content\":\"0123456789\",\"val\":\"Phone\"},{\"content\":\"0234567891\",\"val\":\"Mobile\"},{\"content\":\"232068000000035003\",\"val\":\"SMCREATORID\"},{\"content\":\"Nicholas
-      Martin\",\"val\":\"Created By\"},{\"content\":\"232068000000035003\",\"val\":\"MODIFIEDBY\"},{\"content\":\"Nicholas
-      Martin\",\"val\":\"Modified By\"},{\"content\":\"2012-10-19 16:44:42\",\"val\":\"Created
-      Time\"},{\"content\":\"2012-10-19 17:00:21\",\"val\":\"Modified Time\"},{\"content\":\"1
-      Mailing Street\",\"val\":\"Mailing Street\"},{\"content\":\"Mailing City\",\"val\":\"Mailing
-      City\"},{\"content\":\"Mailing State\",\"val\":\"Mailing State\"},{\"content\":\"AA1
-      AAA\",\"val\":\"Mailing Zip\"},{\"content\":\"UK\",\"val\":\"Mailing Country\"},{\"content\":\"false\",\"val\":\"Email
-      Opt Out\"},{\"content\":\"2012-10-19 17:00:21\",\"val\":\"Last Activity Time\"},{\"content\":\"false\",\"val\":\"Left
-      Company\"}]}}},\"uri\":\"/crm/private/json/Contacts/getSearchRecords\"}}\r\n"
-    http_version: '1.1'
-- !ruby/struct:VCR::HTTPInteraction
-  request: !ruby/struct:VCR::Request
-    method: :get
-    uri: https://crm.zoho.com:443/crm/private/json/Contacts/getSearchRecords?searchCondition=(Contact%20Name%7Cends%20with%7CDoe3)&selectColumns=All&authtoken=c6f9c8e02afef7d62dbbf2fb216c6a7a&scope=crmapi
-    body: 
-    headers: 
-  response: !ruby/struct:VCR::Response
-    status: !ruby/struct:VCR::ResponseStatus
-      code: 200
-      message: OK
-    headers:
-      !binary "c3RyaWN0LXRyYW5zcG9ydC1zZWN1cml0eQ==":
-      - !binary |-
-        bWF4LWFnZT00MzIwMDA=
-      !binary "c2V0LWNvb2tpZQ==":
-      - !binary |-
-        SlNFU1NJT05JRD05MjlEMzVBMzdBRTk0RjU2MDhDOTAwNEQ2MzFFOENFQjsg
+        SlNFU1NJT05JRD0yRDgxMDNDNkI0NTU0MTNBOTM4M0E1MTBERjVBRjYzNTsg
         UGF0aD0vY3Jt
       - !binary |-
-        Y3JtY3NyPTI4MTVkYmI4LWE3MmQtNDE0Ny1iZjIxLTgyYTBjMTIwOTcwMDsg
+        Y3JtY3NyPTExZjk1YTVjLTE5NjMtNGIzNC04ZTQ4LTk3MDJiZWQyOTkwZTsg
         UGF0aD0v
       - !binary |-
-        YTYyMzIxNWYxNj04OyBQYXRoPS8=
+        YTYyMzIxNWYxNj0xMDsgUGF0aD0v
       !binary "cHJhZ21h":
       - !binary |-
         bm8tY2FjaGU=
@@ -90,18 +30,24 @@
         VGh1LCAwMSBKYW4gMTk3MCAwMDowMDowMCBHTVQ=
       !binary "Y29udGVudC10eXBl":
       - !binary |-
-        dGV4dC9wbGFpbjtjaGFyc2V0PXV0Zi04
+        YXBwbGljYXRpb24vanNvbjtjaGFyc2V0PXV0Zi04
       !binary "Y29udGVudC1sZW5ndGg=":
       - !binary |-
-        MTMw
+        NzY2
       !binary "ZGF0ZQ==":
       - !binary |-
-        RnJpLCAxNiBOb3YgMjAxMiAxNjowNDowOSBHTVQ=
+        TW9uLCAxMCBEZWMgMjAxMiAxNjozNzoyMCBHTVQ=
       !binary "c2VydmVy":
       - !binary |-
         WkdT
       !binary "cDNw":
       - !binary |-
         Q1A9IkNBTyBQU0EgT1VSIg==
-    body: ! "{\"response\":{\"nodata\":{\"message\":\"There is no data to show\",\"code\":\"4422\"},\"uri\":\"/crm/private/json/Contacts/getSearchRecords\"}}\r\n"
+    body: ! "{\"response\":{\"result\":{\"Contacts\":{\"row\":{\"no\":\"1\",\"FL\":[{\"content\":\"232068000001739001\",\"val\":\"CONTACTID\"},{\"content\":\"232068000000035003\",\"val\":\"SMOWNERID\"},{\"content\":\"Nicholas
+      Martin\",\"val\":\"Contact Owner\"},{\"content\":\"Doe3\",\"val\":\"Last Name\"},{\"content\":\"232068000000035003\",\"val\":\"SMCREATORID\"},{\"content\":\"Nicholas
+      Martin\",\"val\":\"Created By\"},{\"content\":\"232068000000035003\",\"val\":\"MODIFIEDBY\"},{\"content\":\"Nicholas
+      Martin\",\"val\":\"Modified By\"},{\"content\":\"2012-12-10 16:37:04\",\"val\":\"Created
+      Time\"},{\"content\":\"2012-12-10 16:37:04\",\"val\":\"Modified Time\"},{\"content\":\"false\",\"val\":\"Email
+      Opt Out\"},{\"content\":\"2012-12-10 16:37:04\",\"val\":\"Last Activity Time\"},{\"content\":\"false\",\"val\":\"Left
+      Company\"}]}}},\"uri\":\"/crm/private/json/Contacts/getSearchRecords\"}}\r\n"
     http_version: '1.1'

@@ -2,7 +2,7 @@
 - !ruby/struct:VCR::HTTPInteraction
   request: !ruby/struct:VCR::Request
     method: :get
-    uri: https://crm.zoho.com:443/crm/private/json/Contacts/getSearchRecords?searchCondition=(Email%7Cends%20with%7Cjsmith%40marketdojo.com)&selectColumns=All&authtoken=qwertyy1234567890qwerty12345678&scope=crmapi
+    uri: https://crm.zoho.com:443/crm/private/json/Contacts/getSearchRecords?searchCondition=(Email%7Cends%20with%7Cjdepp%40md.com)&selectColumns=All&authtoken=dummy_key_123&scope=crmapi
     body:
     headers:
   response: !ruby/struct:VCR::Response
@@ -10,16 +10,15 @@
       code: 200
       message: OK
     headers:
-      !binary "c3RyaWN0LXRyYW5zcG9ydC1zZWN1cml0eQ==":
-      - !binary |-
-        bWF4LWFnZT00MzIwMDA=
       !binary "c2V0LWNvb2tpZQ==":
       - !binary |-
-        SlNFU1NJT05JRD1BQTVFMTlCQjU2QzNEQ0E5OEY1MUY4MzZFM0Y3NUY2Qzsg
+        SlNFU1NJT05JRD0yODQxNDYzMkVFMjk1MjI5QjZFQUM3N0ZBNjBENEQ2OTsg
         UGF0aD0vY3Jt
       - !binary |-
-        Y3JtY3NyPTM3MWZkMzQ2LThjNmQtNDBmMC04NzE4LTBhMjkyMWU0NWI4Nzsg
+        Y3JtY3NyPWY1ZGNmOTllLTY2MTctNDI2Yi1iZGE1LTg0ZjQ0NjAwZGI4Yjsg
         UGF0aD0v
+      - !binary |-
+        YTYyMzIxNWYxNj0zOyBQYXRoPS8=
       !binary "cHJhZ21h":
       - !binary |-
         bm8tY2FjaGU=
@@ -31,23 +30,25 @@
         VGh1LCAwMSBKYW4gMTk3MCAwMDowMDowMCBHTVQ=
       !binary "Y29udGVudC10eXBl":
       - !binary |-
-        dGV4dC9wbGFpbjtjaGFyc2V0PXV0Zi04
+        YXBwbGljYXRpb24vanNvbjtjaGFyc2V0PXV0Zi04
       !binary "Y29udGVudC1sZW5ndGg=":
       - !binary |-
-        OTY1
+        ODQ3
       !binary "ZGF0ZQ==":
       - !binary |-
-        TW9uLCAxOSBOb3YgMjAxMiAxNTo1NTowNCBHTVQ=
+        TW9uLCAxMCBEZWMgMjAxMiAxNjo0NDoxNCBHTVQ=
       !binary "c2VydmVy":
       - !binary |-
         WkdT
-    body: ! "{\"response\":{\"result\":{\"Contacts\":{\"row\":{\"no\":\"1\",\"FL\":[{\"content\":\"232068000001637001\",\"val\":\"CONTACTID\"},{\"content\":\"232068000000035003\",\"val\":\"SMOWNERID\"},{\"content\":\"Nicholas
-      Martin\",\"val\":\"Contact Owner\"},{\"content\":\"John\",\"val\":\"First Name\"},{\"content\":\"Smith\",\"val\":\"Last
-      Name\"},{\"content\":\"jsmith@marketdojo.com\",\"val\":\"Email\"},{\"content\":\"Buyer\",\"val\":\"Title\"},{\"content\":\"0123457678\",\"val\":\"Phone\"},{\"content\":\"232068000000035003\",\"val\":\"SMCREATORID\"},{\"content\":\"Nicholas
+      !binary "cDNw":
+      - !binary |-
+        Q1A9IkNBTyBQU0EgT1VSIg==
+    body: ! "{\"response\":{\"result\":{\"Contacts\":{\"row\":{\"no\":\"1\",\"FL\":[{\"content\":\"232068000001741001\",\"val\":\"CONTACTID\"},{\"content\":\"232068000000035003\",\"val\":\"SMOWNERID\"},{\"content\":\"Nicholas
+      Martin\",\"val\":\"Contact Owner\"},{\"content\":\"Johnny\",\"val\":\"First
+      Name\"},{\"content\":\"Depp\",\"val\":\"Last Name\"},{\"content\":\"jdepp@md.com\",\"val\":\"Email\"},{\"content\":\"232068000000035003\",\"val\":\"SMCREATORID\"},{\"content\":\"Nicholas
       Martin\",\"val\":\"Created By\"},{\"content\":\"232068000000035003\",\"val\":\"MODIFIEDBY\"},{\"content\":\"Nicholas
-      Martin\",\"val\":\"Modified By\"},{\"content\":\"2012-11-19 15:52:25\",\"val\":\"Created
-      Time\"},{\"content\":\"2012-11-19 15:52:25\",\"val\":\"Modified Time\"},{\"content\":\"false\",\"val\":\"Email
-      Opt Out\"},{\"content\":\"Mr.\",\"val\":\"Salutation\"},{\"content\":\"2012-11-19
-      15:52:25\",\"val\":\"Last Activity Time\"},{\"content\":\"false\",\"val\":\"Left
+      Martin\",\"val\":\"Modified By\"},{\"content\":\"2012-12-10 16:39:23\",\"val\":\"Created
+      Time\"},{\"content\":\"2012-12-10 16:44:01\",\"val\":\"Modified Time\"},{\"content\":\"false\",\"val\":\"Email
+      Opt Out\"},{\"content\":\"2012-12-10 16:44:01\",\"val\":\"Last Activity Time\"},{\"content\":\"false\",\"val\":\"Left
       Company\"}]}}},\"uri\":\"/crm/private/json/Contacts/getSearchRecords\"}}\r\n"
     http_version: '1.1'

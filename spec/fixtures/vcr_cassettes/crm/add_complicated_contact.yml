@@ -3,22 +3,20 @@
   request: !ruby/struct:VCR::Request
     method: :post
     uri: https://crm.zoho.com:443/crm/private/json/Contacts/insertRecords
-    body: xmlData=%3CContacts%3E%0A%20%20%3Crow%20no%3D%221%22%3E%0A%20%20%20%20%3CFL%20val%3D%22ACCOUNTID%22%3E%3C%2FFL%3E%0A%20%20%20%20%3CFL%20val%3D%22Contact%20Owner%22%3EContact%20Owner%3C%2FFL%3E%0A%20%20%20%20%3CFL%20val%3D%22Lead%20Source%22%3ELead%20Source%3C%2FFL%3E%0A%20%20%20%20%3CFL%20val%3D%22First%20Name%22%3ECharlie%3C%2FFL%3E%0A%20%20%20%20%3CFL%20val%3D%22Last%20Name%22%3ESheen%3C%2FFL%3E%0A%20%20%20%20%3CFL%20val%3D%22Email%22%3EEmail%3C%2FFL%3E%0A%20%20%20%20%3CFL%20val%3D%22Title%22%3ETitle%3C%2FFL%3E%0A%20%20%20%20%3CFL%20val%3D%22Department%22%3EDepartment%3C%2FFL%3E%0A%20%20%20%20%3CFL%20val%3D%22Phone%22%3EPhone%3C%2FFL%3E%0A%20%20%20%20%3CFL%20val%3D%22Home%20Phone%22%3EHome%20Phone%3C%2FFL%3E%0A%20%20%20%20%3CFL%20val%3D%22Fax%22%3EFax%3C%2FFL%3E%0A%20%20%20%20%3CFL%20val%3D%22Mobile%22%3EMobile%3C%2FFL%3E%0A%20%20%20%20%3CFL%20val%3D%22Date%20of%20Birth%22%3EDate%20of%20Birth%3C%2FFL%3E%0A%20%20%20%20%3CFL%20val%3D%22Assistant%22%3EAssistant%3C%2FFL%3E%0A%20%20%20%20%3CFL%20val%3D%22Asst%20Phone%22%3EAsst%20Phone%3C%2FFL%3E%0A%20%20%20%20%3CFL%20val%3D%22Reports%20To%22%3EReports%20To%3C%2FFL%3E%0A%20%20%20%20%3CFL%20val%3D%22Mailing%20Street%22%3EMailing%20Street%3C%2FFL%3E%0A%20%20%20%20%3CFL%20val%3D%22Other%20Street%22%3EOther%20Street%3C%2FFL%3E%0A%20%20%20%20%3CFL%20val%3D%22Mailing%20City%22%3EMailing%20City%3C%2FFL%3E%0A%20%20%20%20%3CFL%20val%3D%22Other%20City%22%3EOther%20City%3C%2FFL%3E%0A%20%20%20%20%3CFL%20val%3D%22Mailing%20State%22%3EMailing%20State%3C%2FFL%3E%0A%20%20%20%20%3CFL%20val%3D%22Other%20State%22%3EOther%20State%3C%2FFL%3E%0A%20%20%20%20%3CFL%20val%3D%22Mailing%20Zip%22%3EMailing%20Zip%3C%2FFL%3E%0A%20%20%20%20%3CFL%20val%3D%22Other%20Zip%22%3EOther%20Zip%3C%2FFL%3E%0A%20%20%20%20%3CFL%20val%3D%22Mailing%20Country%22%3EMailing%20Country%3C%2FFL%3E%0A%20%20%20%20%3CFL%20val%3D%22Description%22%3EDescription%3C%2FFL%3E%0A%20%20%20%20%3CFL%20val%3D%22Skype%20ID%22%3ESkype%20ID%3C%2FFL%3E%0A%20%20%20%20%3CFL%20val%3D%22Salutation%22%3ESalutation%3C%2FFL%3E%0A%20%20%20%20%3CFL%20val%3D%22Email3%22%3EEmail3%3C%2FFL%3E%0A%20%20%20%20%3CFL%20val%3D%22Registration%20Status%22%3ERegistration%20Status%3C%2FFL%3E%0A%20%20%20%20%3CFL%20val%3D%22Email%20Opt%20Out%22%3EEmail%20Opt%20Out%3C%2FFL%3E%0A%20%20%20%20%3CFL%20val%3D%22Secondary%20Email%22%3ESecondary%20Email%3C%2FFL%3E%0A%20%20%3C%2Frow%3E%0A%3C%2FContacts%3E%0A&newFormat=1&authtoken=qwertyy1234567890qwerty12345678&scope=crmapi
+    body: xmlData=%3CContacts%3E%0A%20%20%3Crow%20no%3D%221%22%3E%0A%20%20%20%20%3CFL%20val%3D%22ACCOUNTID%22%3E%3C%2FFL%3E%0A%20%20%20%20%3CFL%20val%3D%22Contact%20Owner%22%3EContact%20Owner%3C%2FFL%3E%0A%20%20%20%20%3CFL%20val%3D%22Lead%20Source%22%3ELead%20Source%3C%2FFL%3E%0A%20%20%20%20%3CFL%20val%3D%22First%20Name%22%3ECharlie%3C%2FFL%3E%0A%20%20%20%20%3CFL%20val%3D%22Last%20Name%22%3ESheen%3C%2FFL%3E%0A%20%20%20%20%3CFL%20val%3D%22Email%22%3EEmail%3C%2FFL%3E%0A%20%20%20%20%3CFL%20val%3D%22Title%22%3ETitle%3C%2FFL%3E%0A%20%20%20%20%3CFL%20val%3D%22Department%22%3EDepartment%3C%2FFL%3E%0A%20%20%20%20%3CFL%20val%3D%22Phone%22%3EPhone%3C%2FFL%3E%0A%20%20%20%20%3CFL%20val%3D%22Home%20Phone%22%3EHome%20Phone%3C%2FFL%3E%0A%20%20%20%20%3CFL%20val%3D%22Fax%22%3EFax%3C%2FFL%3E%0A%20%20%20%20%3CFL%20val%3D%22Mobile%22%3EMobile%3C%2FFL%3E%0A%20%20%20%20%3CFL%20val%3D%22Date%20of%20Birth%22%3EDate%20of%20Birth%3C%2FFL%3E%0A%20%20%20%20%3CFL%20val%3D%22Assistant%22%3EAssistant%3C%2FFL%3E%0A%20%20%20%20%3CFL%20val%3D%22Asst%20Phone%22%3EAsst%20Phone%3C%2FFL%3E%0A%20%20%20%20%3CFL%20val%3D%22Reports%20To%22%3EReports%20To%3C%2FFL%3E%0A%20%20%20%20%3CFL%20val%3D%22Mailing%20Street%22%3EMailing%20Street%3C%2FFL%3E%0A%20%20%20%20%3CFL%20val%3D%22Other%20Street%22%3EOther%20Street%3C%2FFL%3E%0A%20%20%20%20%3CFL%20val%3D%22Mailing%20City%22%3EMailing%20City%3C%2FFL%3E%0A%20%20%20%20%3CFL%20val%3D%22Other%20City%22%3EOther%20City%3C%2FFL%3E%0A%20%20%20%20%3CFL%20val%3D%22Mailing%20State%22%3EMailing%20State%3C%2FFL%3E%0A%20%20%20%20%3CFL%20val%3D%22Other%20State%22%3EOther%20State%3C%2FFL%3E%0A%20%20%20%20%3CFL%20val%3D%22Mailing%20Zip%22%3EMailing%20Zip%3C%2FFL%3E%0A%20%20%20%20%3CFL%20val%3D%22Other%20Zip%22%3EOther%20Zip%3C%2FFL%3E%0A%20%20%20%20%3CFL%20val%3D%22Mailing%20Country%22%3EMailing%20Country%3C%2FFL%3E%0A%20%20%20%20%3CFL%20val%3D%22Other%20Country%22%3EOther%20Country%3C%2FFL%3E%0A%20%20%20%20%3CFL%20val%3D%22Description%22%3EDescription%3C%2FFL%3E%0A%20%20%20%20%3CFL%20val%3D%22Skype%20ID%22%3ESkype%20ID%3C%2FFL%3E%0A%20%20%20%20%3CFL%20val%3D%22Salutation%22%3ESalutation%3C%2FFL%3E%0A%20%20%20%20%3CFL%20val%3D%22Email3%22%3EEmail3%3C%2FFL%3E%0A%20%20%20%20%3CFL%20val%3D%22Lead%20Source%20Detail%22%3ELead%20Source%20Detail%3C%2FFL%3E%0A%20%20%20%20%3CFL%20val%3D%22Registration%20Status%22%3ERegistration%20Status%3C%2FFL%3E%0A%20%20%20%20%3CFL%20val%3D%22Email%20Opt%20Out%22%3EEmail%20Opt%20Out%3C%2FFL%3E%0A%20%20%20%20%3CFL%20val%3D%22Secondary%20Email%22%3ESecondary%20Email%3C%2FFL%3E%0A%20%20%20%20%3CFL%20val%3D%22Website%22%3EWebsite%3C%2FFL%3E%0A%20%20%3C%2Frow%3E%0A%3C%2FContacts%3E%0A&newFormat=1&wfTrigger=true&authtoken=dummy_key_123&scope=crmapi
     headers:
   response: !ruby/struct:VCR::Response
     status: !ruby/struct:VCR::ResponseStatus
       code: 200
       message: OK
     headers:
-      !binary "c3RyaWN0LXRyYW5zcG9ydC1zZWN1cml0eQ==":
-      - !binary |-
-        bWF4LWFnZT00MzIwMDA=
       !binary "c2V0LWNvb2tpZQ==":
       - !binary |-
-        Y3JtY3NyPWYwM2QwMGMzLWQ0YzEtNDc2YS1hYzZmLTFkODcxNzcwZjcxNTsg
-        UGF0aD0v
+        SlNFU1NJT05JRD0zMUE4OUVDNkYyOTIyQjY0Qzc2NkQ5MEM3OERBNDJBQzsg
+        UGF0aD0vY3Jt
       - !binary |-
-        YTYyMzIxNWYxNj0xMjsgUGF0aD0v
+        Y3JtY3NyPWVlNjY0NmU1LTdiMjUtNGZlMi1iM2EzLTE4OWM0NWM5YzU3Mzsg
+        UGF0aD0v
       !binary "cHJhZ21h":
       - !binary |-
         bm8tY2FjaGU=
@@ -30,21 +28,18 @@
         VGh1LCAwMSBKYW4gMTk3MCAwMDowMDowMCBHTVQ=
       !binary "Y29udGVudC10eXBl":
       - !binary |-
-        dGV4dC9wbGFpbjtjaGFyc2V0PXV0Zi04
+        YXBwbGljYXRpb24vanNvbjtjaGFyc2V0PXV0Zi04
       !binary "Y29udGVudC1sZW5ndGg=":
       - !binary |-
         Mzc3
       !binary "ZGF0ZQ==":
       - !binary |-
-        RnJpLCAxOSBPY3QgMjAxMiAxNzowMjo0MSBHTVQ=
+        TW9uLCAxMCBEZWMgMjAxMiAxNjozOToyNSBHTVQ=
       !binary "c2VydmVy":
       - !binary |-
         WkdT
-      !binary "cDNw":
-      - !binary |-
-        Q1A9IkNBTyBQU0EgT1VSIg==
-    body: ! "{\"response\":{\"result\":{\"message\":\"Record(s) added successfully\",\"recorddetail\":{\"FL\":[{\"content\":\"232068000001518003\",\"val\":\"Id\"},{\"content\":\"2012-10-19
-      18:02:41\",\"val\":\"Created Time\"},{\"content\":\"2012-10-19 18:02:41\",\"val\":\"Modified
+    body: ! "{\"response\":{\"result\":{\"message\":\"Record(s) added successfully\",\"recorddetail\":{\"FL\":[{\"content\":\"232068000001742001\",\"val\":\"Id\"},{\"content\":\"2012-12-10
+      16:39:25\",\"val\":\"Created Time\"},{\"content\":\"2012-12-10 16:39:25\",\"val\":\"Modified
       Time\"},{\"content\":\"Martin\",\"val\":\"Created By\"},{\"content\":\"Martin\",\"val\":\"Modified
       By\"}]}},\"uri\":\"/crm/private/json/Contacts/insertRecords\"}}\r\n"
     http_version: '1.1'

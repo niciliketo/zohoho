@@ -3,22 +3,22 @@
   request: !ruby/struct:VCR::Request
     method: :post
     uri: https://crm.zoho.com:443/crm/private/json/Notes/insertRecords
-    body: xmlData=%3CNotes%3E%0A%20%20%3Crow%20no%3D%221%22%3E%0A%20%20%20%20%3CFL%20val%3D%22entityId%22%3E232068000001518001%3C%2FFL%3E%0A%20%20%20%20%3CFL%20val%3D%22Note%20Title%22%3ENote%20to%20self%3C%2FFL%3E%0A%20%20%20%20%3CFL%20val%3D%22Note%20Content%22%3EDon%26apos%3Bt%20do%20that%20again%3C%2FFL%3E%0A%20%20%3C%2Frow%3E%0A%3C%2FNotes%3E%0A&newFormat=1&authtoken=qwertyy1234567890qwerty12345678&scope=crmapi
+    body: xmlData=%3CNotes%3E%0A%20%20%3Crow%20no%3D%221%22%3E%0A%20%20%20%20%3CFL%20val%3D%22entityId%22%3E232068000001741001%3C%2FFL%3E%0A%20%20%20%20%3CFL%20val%3D%22Note%20Title%22%3ENote%20to%20self%3C%2FFL%3E%0A%20%20%20%20%3CFL%20val%3D%22Note%20Content%22%3EDon%26apos%3Bt%20do%20that%20again%3C%2FFL%3E%0A%20%20%3C%2Frow%3E%0A%3C%2FNotes%3E%0A&newFormat=1&authtoken=dummy_key_123&scope=crmapi
     headers:
   response: !ruby/struct:VCR::Response
     status: !ruby/struct:VCR::ResponseStatus
       code: 200
       message: OK
     headers:
-      !binary "c3RyaWN0LXRyYW5zcG9ydC1zZWN1cml0eQ==":
-      - !binary |-
-        bWF4LWFnZT00MzIwMDA=
       !binary "c2V0LWNvb2tpZQ==":
       - !binary |-
-        Y3JtY3NyPTEwNDkzYzE1LTEyZmItNDNmNi04NWIzLTA0ZmVmYzAwM2ViYjsg
+        SlNFU1NJT05JRD1GMkJFRURENjM2RDZFRDdENDAwM0JFQjM3RTM5OEU5RTsg
+        UGF0aD0vY3Jt
+      - !binary |-
+        Y3JtY3NyPWQ3NjM3M2Y2LWU5MjAtNGQ1Yy1hODRjLTgzMWI0OWNiZDlkNTsg
         UGF0aD0v
       - !binary |-
-        YTYyMzIxNWYxNj0wOyBQYXRoPS8=
+        YTYyMzIxNWYxNj04OyBQYXRoPS8=
       !binary "cHJhZ21h":
       - !binary |-
         bm8tY2FjaGU=
@@ -30,21 +30,21 @@
         VGh1LCAwMSBKYW4gMTk3MCAwMDowMDowMCBHTVQ=
       !binary "Y29udGVudC10eXBl":
       - !binary |-
-        dGV4dC9wbGFpbjtjaGFyc2V0PXV0Zi04
+        YXBwbGljYXRpb24vanNvbjtjaGFyc2V0PXV0Zi04
       !binary "Y29udGVudC1sZW5ndGg=":
       - !binary |-
         Mzc0
       !binary "ZGF0ZQ==":
       - !binary |-
-        RnJpLCAxOSBPY3QgMjAxMiAxNjowMjowMSBHTVQ=
+        TW9uLCAxMCBEZWMgMjAxMiAxNjo0MDoxMSBHTVQ=
       !binary "c2VydmVy":
       - !binary |-
         WkdT
       !binary "cDNw":
       - !binary |-
         Q1A9IkNBTyBQU0EgT1VSIg==
-    body: ! "{\"response\":{\"result\":{\"message\":\"Record(s) added successfully\",\"recorddetail\":{\"FL\":[{\"content\":\"232068000001519001\",\"val\":\"Id\"},{\"content\":\"2012-10-19
-      17:02:01\",\"val\":\"Created Time\"},{\"content\":\"2012-10-19 17:02:01\",\"val\":\"Modified
+    body: ! "{\"response\":{\"result\":{\"message\":\"Record(s) added successfully\",\"recorddetail\":{\"FL\":[{\"content\":\"232068000001742003\",\"val\":\"Id\"},{\"content\":\"2012-12-10
+      16:40:11\",\"val\":\"Created Time\"},{\"content\":\"2012-12-10 16:40:11\",\"val\":\"Modified
       Time\"},{\"content\":\"Martin\",\"val\":\"Created By\"},{\"content\":\"Martin\",\"val\":\"Modified
       By\"}]}},\"uri\":\"/crm/private/json/Notes/insertRecords\"}}\r\n"
     http_version: '1.1'

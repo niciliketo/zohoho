@@ -2,26 +2,21 @@
 - !ruby/struct:VCR::HTTPInteraction
   request: !ruby/struct:VCR::Request
     method: :get
-    uri: https://crm.zoho.com:443/crm/private/json/Accounts/getRecordById?id=232068000001622022&selectColumns=All&authtoken=qwertyy1234567890qwerty12345678&scope=crmapi
-    body: 
-    headers: 
+    uri: https://crm.zoho.com:443/crm/private/json/Accounts/getRecordById?id=232068000001622022&selectColumns=All&authtoken=dummy_key_123&scope=crmapi
+    body:
+    headers:
   response: !ruby/struct:VCR::Response
     status: !ruby/struct:VCR::ResponseStatus
       code: 200
       message: OK
     headers:
-      !binary "c3RyaWN0LXRyYW5zcG9ydC1zZWN1cml0eQ==":
-      - !binary |-
-        bWF4LWFnZT00MzIwMDA=
       !binary "c2V0LWNvb2tpZQ==":
       - !binary |-
-        SlNFU1NJT05JRD0wMjMzNTJENzk5OTgyODg5QjQ3OTAxQjU2NzE1RDQxNzsg
+        SlNFU1NJT05JRD1DRjQ0QUMxMjkxQTMwQzdFMkIyQkM4MEQ0M0Q1OTJDRDsg
         UGF0aD0vY3Jt
       - !binary |-
-        Y3JtY3NyPWRkOWUyYTg1LWYwZmEtNDRmYi1iNDMwLTc3ODU2OTBmNDkzYTsg
+        Y3JtY3NyPTU0ZjcxODhmLWE0M2YtNDM1Yi1iNDVhLTU0MTY4NzUzZDNiOTsg
         UGF0aD0v
-      - !binary |-
-        YTYyMzIxNWYxNj0xMTsgUGF0aD0v
       !binary "cHJhZ21h":
       - !binary |-
         bm8tY2FjaGU=
@@ -33,120 +28,13 @@
         VGh1LCAwMSBKYW4gMTk3MCAwMDowMDowMCBHTVQ=
       !binary "Y29udGVudC10eXBl":
       - !binary |-
-        dGV4dC9wbGFpbjtjaGFyc2V0PXV0Zi04
+        YXBwbGljYXRpb24vanNvbjtjaGFyc2V0PXV0Zi04
       !binary "Y29udGVudC1sZW5ndGg=":
       - !binary |-
         OTM5
       !binary "ZGF0ZQ==":
       - !binary |-
-        RnJpLCAxNiBOb3YgMjAxMiAxNjo0MDowMCBHTVQ=
-      !binary "c2VydmVy":
-      - !binary |-
-        WkdT
-      !binary "cDNw":
-      - !binary |-
-        Q1A9IkNBTyBQU0EgT1VSIg==
-    body: ! "{\"response\":{\"result\":{\"Accounts\":{\"row\":{\"no\":\"1\",\"FL\":[{\"content\":\"232068000001622022\",\"val\":\"ACCOUNTID\"},{\"content\":\"232068000000035003\",\"val\":\"SMOWNERID\"},{\"content\":\"Nicholas
-      Martin\",\"val\":\"Account Owner\"},{\"content\":\"Meerkat Dojo Participant\",\"val\":\"Account
-      Name\"},{\"content\":\"0332589\",\"val\":\"Phone\"},{\"content\":\"Prospect\",\"val\":\"Account
-      Type\"},{\"content\":\"0\",\"val\":\"Employees\"},{\"content\":\"0\",\"val\":\"Annual
-      Revenue\"},{\"content\":\"232068000000035003\",\"val\":\"SMCREATORID\"},{\"content\":\"Nicholas
-      Martin\",\"val\":\"Created By\"},{\"content\":\"232068000000035003\",\"val\":\"MODIFIEDBY\"},{\"content\":\"Nicholas
-      Martin\",\"val\":\"Modified By\"},{\"content\":\"2012-11-16 11:09:27\",\"val\":\"Created
-      Time\"},{\"content\":\"2012-11-16 11:52:22\",\"val\":\"Modified Time\"},{\"content\":\"UK\",\"val\":\"Billing
-      Country\"},{\"content\":\"UK\",\"val\":\"Shipping Country\"},{\"content\":\"2012-11-16
-      11:52:22\",\"val\":\"Last Activity Time\"}]}}},\"uri\":\"/crm/private/json/Accounts/getRecordById\"}}\r\n"
-    http_version: '1.1'
-- !ruby/struct:VCR::HTTPInteraction
-  request: !ruby/struct:VCR::Request
-    method: :get
-    uri: https://crm.zoho.com:443/crm/private/json/Accounts/getRecordById?id=232068000001622022&selectColumns=All&authtoken=qwertyy1234567890qwerty12345678&scope=crmapi
-    body: 
-    headers: 
-  response: !ruby/struct:VCR::Response
-    status: !ruby/struct:VCR::ResponseStatus
-      code: 200
-      message: OK
-    headers:
-      !binary "c3RyaWN0LXRyYW5zcG9ydC1zZWN1cml0eQ==":
-      - !binary |-
-        bWF4LWFnZT00MzIwMDA=
-      !binary "c2V0LWNvb2tpZQ==":
-      - !binary |-
-        SlNFU1NJT05JRD00QzUxQTIyM0E0MThERUJCQTQ4MkEwNjMwQzYwRUM4Mjsg
-        UGF0aD0vY3Jt
-      - !binary |-
-        Y3JtY3NyPTFiODUyMzJhLTlhZTEtNDAwOS1hMzY1LTg4ZDMwOWVmODg3YTsg
-        UGF0aD0v
-      - !binary |-
-        YTYyMzIxNWYxNj0wOyBQYXRoPS8=
-      !binary "cHJhZ21h":
-      - !binary |-
-        bm8tY2FjaGU=
-      !binary "Y2FjaGUtY29udHJvbA==":
-      - !binary |-
-        bm8tY2FjaGU=
-      !binary "ZXhwaXJlcw==":
-      - !binary |-
-        VGh1LCAwMSBKYW4gMTk3MCAwMDowMDowMCBHTVQ=
-      !binary "Y29udGVudC10eXBl":
-      - !binary |-
-        dGV4dC9odG1sO2NoYXJzZXQ9VVRGLTg=
-      !binary "ZGF0ZQ==":
-      - !binary |-
-        RnJpLCAxNiBOb3YgMjAxMiAxNjo0MDo1NyBHTVQ=
-      !binary "c2VydmVy":
-      - !binary |-
-        WkdT
-      !binary "cDNw":
-      - !binary |-
-        Q1A9IkNBTyBQU0EgT1VSIg==
-      !binary "dHJhbnNmZXItZW5jb2Rpbmc=":
-      - !binary |-
-        Y2h1bmtlZA==
-    body: ! '{"response":{"error":{"message":"Invalid Ticket Id","code":"4834"}}}
-
-'
-    http_version: '1.1'
-- !ruby/struct:VCR::HTTPInteraction
-  request: !ruby/struct:VCR::Request
-    method: :get
-    uri: https://crm.zoho.com:443/crm/private/json/Accounts/getRecordById?id=232068000001622022&selectColumns=All&authtoken=c6f9c8e02afef7d62dbbf2fb216c6a7a&scope=crmapi
-    body: 
-    headers: 
-  response: !ruby/struct:VCR::Response
-    status: !ruby/struct:VCR::ResponseStatus
-      code: 200
-      message: OK
-    headers:
-      !binary "c3RyaWN0LXRyYW5zcG9ydC1zZWN1cml0eQ==":
-      - !binary |-
-        bWF4LWFnZT00MzIwMDA=
-      !binary "c2V0LWNvb2tpZQ==":
-      - !binary |-
-        SlNFU1NJT05JRD04MzVBMDMxMDE1MjA1MjUwMDE0RUU4MDEwNTc3RTE0Njsg
-        UGF0aD0vY3Jt
-      - !binary |-
-        Y3JtY3NyPTQ1Zjc2YmRkLTlhYTctNDk5NS1hOTE3LTczZWFiNjEzMjYzZTsg
-        UGF0aD0v
-      !binary "cHJhZ21h":
-      - !binary |-
-        bm8tY2FjaGU=
-      !binary "Y2FjaGUtY29udHJvbA==":
-      - !binary |-
-        bm8tY2FjaGU=
-      !binary "ZXhwaXJlcw==":
-      - !binary |-
-        VGh1LCAwMSBKYW4gMTk3MCAwMDowMDowMCBHTVQ=
-      !binary "Y29udGVudC10eXBl":
-      - !binary |-
-        dGV4dC9wbGFpbjtjaGFyc2V0PXV0Zi04
-      !binary "Y29udGVudC1sZW5ndGg=":
-      - !binary |-
-        OTM5
-      !binary "ZGF0ZQ==":
-      - !binary |-
-        TW9uLCAxOSBOb3YgMjAxMiAxNTo1NDo0NSBHTVQ=
+        TW9uLCAxMCBEZWMgMjAxMiAxNTo1Nzo1NyBHTVQ=
       !binary "c2VydmVy":
       - !binary |-
         WkdT

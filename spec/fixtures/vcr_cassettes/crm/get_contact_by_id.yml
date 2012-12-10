@@ -2,135 +2,20 @@
 - !ruby/struct:VCR::HTTPInteraction
   request: !ruby/struct:VCR::Request
     method: :get
-    uri: https://crm.zoho.com:443/crm/private/json/Contacts/getRecordById?id=232068000001617005&selectColumns=All&authtoken=qwertyy1234567890qwerty12345678&scope=crmapi
-    body: 
-    headers: 
+    uri: https://crm.zoho.com:443/crm/private/json/Contacts/getRecordById?id=232068000001617005&selectColumns=All&authtoken=dummy_key_123&scope=crmapi
+    body:
+    headers:
   response: !ruby/struct:VCR::Response
     status: !ruby/struct:VCR::ResponseStatus
       code: 200
       message: OK
     headers:
-      !binary "c3RyaWN0LXRyYW5zcG9ydC1zZWN1cml0eQ==":
-      - !binary |-
-        bWF4LWFnZT00MzIwMDA=
       !binary "c2V0LWNvb2tpZQ==":
       - !binary |-
-        SlNFU1NJT05JRD04RTQ1MDY2OUY1NThDNDAxM0VCNTQwM0VDRkVEQTYzMTsg
+        SlNFU1NJT05JRD01Q0U1QjMxMzFBOUM3NUVBQ0IzODkzM0Y3OTQ4MzJDNjsg
         UGF0aD0vY3Jt
       - !binary |-
-        Y3JtY3NyPThmOGY4OGMxLTZlYWQtNDA0My1hYzI4LTZiNTAwOGNhNGI1Yzsg
-        UGF0aD0v
-      - !binary |-
-        YTYyMzIxNWYxNj0xOyBQYXRoPS8=
-      !binary "cHJhZ21h":
-      - !binary |-
-        bm8tY2FjaGU=
-      !binary "Y2FjaGUtY29udHJvbA==":
-      - !binary |-
-        bm8tY2FjaGU=
-      !binary "ZXhwaXJlcw==":
-      - !binary |-
-        VGh1LCAwMSBKYW4gMTk3MCAwMDowMDowMCBHTVQ=
-      !binary "Y29udGVudC10eXBl":
-      - !binary |-
-        dGV4dC9wbGFpbjtjaGFyc2V0PXV0Zi04
-      !binary "Y29udGVudC1sZW5ndGg=":
-      - !binary |-
-        MTM4Mg==
-      !binary "ZGF0ZQ==":
-      - !binary |-
-        RnJpLCAxNiBOb3YgMjAxMiAxNjoxODoyOSBHTVQ=
-      !binary "c2VydmVy":
-      - !binary |-
-        WkdT
-      !binary "cDNw":
-      - !binary |-
-        Q1A9IkNBTyBQU0EgT1VSIg==
-    body: ! "{\"response\":{\"result\":{\"Contacts\":{\"row\":{\"no\":\"1\",\"FL\":[{\"content\":\"232068000001617005\",\"val\":\"CONTACTID\"},{\"content\":\"232068000000035003\",\"val\":\"SMOWNERID\"},{\"content\":\"Nicholas
-      Martin\",\"val\":\"Contact Owner\"},{\"content\":\"Registered on MarketDojo.com\",\"val\":\"Lead
-      Source\"},{\"content\":\"Nic\",\"val\":\"First Name\"},{\"content\":\"Test Again\",\"val\":\"Last
-      Name\"},{\"content\":\"232068000001622022\",\"val\":\"ACCOUNTID\"},{\"content\":\"Meerkat
-      Dojo Participant\",\"val\":\"Account Name\"},{\"content\":\"nictestagainp@marketdojo.com\",\"val\":\"Email\"},{\"content\":\"0332589\",\"val\":\"Phone\"},{\"content\":\"232068000000035003\",\"val\":\"SMCREATORID\"},{\"content\":\"Nicholas
-      Martin\",\"val\":\"Created By\"},{\"content\":\"232068000000035003\",\"val\":\"MODIFIEDBY\"},{\"content\":\"Nicholas
-      Martin\",\"val\":\"Modified By\"},{\"content\":\"2012-11-16 11:51:00\",\"val\":\"Created
-      Time\"},{\"content\":\"2012-11-16 11:51:00\",\"val\":\"Modified Time\"},{\"content\":\"UK\",\"val\":\"Mailing
-      Country\"},{\"content\":\"UK\",\"val\":\"Other Country\"},{\"content\":\"true\",\"val\":\"Email
-      Opt Out\"},{\"content\":\"Registered on 16/11/2012\",\"val\":\"Lead Source Detail\"},{\"content\":\"Registered
-      As Host\",\"val\":\"Registration Status\"},{\"content\":\"2012-11-16 11:51:00\",\"val\":\"Last
-      Activity Time\"},{\"content\":\"2012-11-16 11:50:54\",\"val\":\"Date of Registration\"},{\"content\":\"xxx\",\"val\":\"Mail
-      Sequence\"},{\"content\":\"false\",\"val\":\"Left Company\"}]}}},\"uri\":\"/crm/private/json/Contacts/getRecordById\"}}\r\n"
-    http_version: '1.1'
-- !ruby/struct:VCR::HTTPInteraction
-  request: !ruby/struct:VCR::Request
-    method: :get
-    uri: https://crm.zoho.com:443/crm/private/json/Contacts/getRecordById?id=232068000001617005&selectColumns=All&authtoken=qwertyy1234567890qwerty12345678&scope=crmapi
-    body: 
-    headers: 
-  response: !ruby/struct:VCR::Response
-    status: !ruby/struct:VCR::ResponseStatus
-      code: 200
-      message: OK
-    headers:
-      !binary "c3RyaWN0LXRyYW5zcG9ydC1zZWN1cml0eQ==":
-      - !binary |-
-        bWF4LWFnZT00MzIwMDA=
-      !binary "c2V0LWNvb2tpZQ==":
-      - !binary |-
-        SlNFU1NJT05JRD01N0M0OTVDRURGRDY0QUE0REU2NDZFNzgyNjk0NkFBMjsg
-        UGF0aD0vY3Jt
-      - !binary |-
-        Y3JtY3NyPTBiMjA5NDA1LTI1NDgtNDUzNC05YjJhLTRkNGY1OWViNGIwOTsg
-        UGF0aD0v
-      - !binary |-
-        YTYyMzIxNWYxNj0xMjsgUGF0aD0v
-      !binary "cHJhZ21h":
-      - !binary |-
-        bm8tY2FjaGU=
-      !binary "Y2FjaGUtY29udHJvbA==":
-      - !binary |-
-        bm8tY2FjaGU=
-      !binary "ZXhwaXJlcw==":
-      - !binary |-
-        VGh1LCAwMSBKYW4gMTk3MCAwMDowMDowMCBHTVQ=
-      !binary "Y29udGVudC10eXBl":
-      - !binary |-
-        dGV4dC9odG1sO2NoYXJzZXQ9VVRGLTg=
-      !binary "ZGF0ZQ==":
-      - !binary |-
-        RnJpLCAxNiBOb3YgMjAxMiAxNjo0MDo1NSBHTVQ=
-      !binary "c2VydmVy":
-      - !binary |-
-        WkdT
-      !binary "cDNw":
-      - !binary |-
-        Q1A9IkNBTyBQU0EgT1VSIg==
-      !binary "dHJhbnNmZXItZW5jb2Rpbmc=":
-      - !binary |-
-        Y2h1bmtlZA==
-    body: ! '{"response":{"error":{"message":"Invalid Ticket Id","code":"4834"}}}
-
-'
-    http_version: '1.1'
-- !ruby/struct:VCR::HTTPInteraction
-  request: !ruby/struct:VCR::Request
-    method: :get
-    uri: https://crm.zoho.com:443/crm/private/json/Contacts/getRecordById?id=232068000001617005&selectColumns=All&authtoken=c6f9c8e02afef7d62dbbf2fb216c6a7a&scope=crmapi
-    body: 
-    headers: 
-  response: !ruby/struct:VCR::Response
-    status: !ruby/struct:VCR::ResponseStatus
-      code: 200
-      message: OK
-    headers:
-      !binary "c3RyaWN0LXRyYW5zcG9ydC1zZWN1cml0eQ==":
-      - !binary |-
-        bWF4LWFnZT00MzIwMDA=
-      !binary "c2V0LWNvb2tpZQ==":
-      - !binary |-
-        SlNFU1NJT05JRD0xQjNDRUFEMUY3NDI2NkFCNzgxMzE0NzYwQTM4NkQyNTsg
-        UGF0aD0vY3Jt
-      - !binary |-
-        Y3JtY3NyPWJhMWZkNjRhLWVjM2EtNDUxNi05YTQ5LTlmNGQwNDU3YmM2YTsg
+        Y3JtY3NyPTMyNWVkNDgyLTFkN2EtNGYzOS1hZDZkLTQxMjk1MGU5ZTA0Mjsg
         UGF0aD0v
       !binary "cHJhZ21h":
       - !binary |-
@@ -143,15 +28,63 @@
         VGh1LCAwMSBKYW4gMTk3MCAwMDowMDowMCBHTVQ=
       !binary "Y29udGVudC10eXBl":
       - !binary |-
-        dGV4dC9wbGFpbjtjaGFyc2V0PXV0Zi04
+        YXBwbGljYXRpb24vanNvbjtjaGFyc2V0PXV0Zi04
       !binary "Y29udGVudC1sZW5ndGg=":
       - !binary |-
         MTI3
       !binary "ZGF0ZQ==":
       - !binary |-
-        TW9uLCAxOSBOb3YgMjAxMiAxNTo1NDo0MCBHTVQ=
+        TW9uLCAxMCBEZWMgMjAxMiAxNTo1Nzo1NSBHTVQ=
       !binary "c2VydmVy":
       - !binary |-
         WkdT
     body: ! "{\"response\":{\"nodata\":{\"message\":\"There is no data to show\",\"code\":\"4422\"},\"uri\":\"/crm/private/json/Contacts/getRecordById\"}}\r\n"
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :get
+    uri: https://crm.zoho.com:443/crm/private/json/Contacts/getRecordById?id=232068000001741001&selectColumns=All&authtoken=dummy_key_123&scope=crmapi
+    body:
+    headers:
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: OK
+    headers:
+      !binary "c2V0LWNvb2tpZQ==":
+      - !binary |-
+        SlNFU1NJT05JRD0xQTE1MDYxMTlDMDE3QjI4RDc4OEJFNEJFRjNBQzNDMTsg
+        UGF0aD0vY3Jt
+      - !binary |-
+        Y3JtY3NyPWMzYmM2ZjZjLWExZWMtNDZiZS1hMmNhLTk3ZGIyYjZhZmQ3ODsg
+        UGF0aD0v
+      !binary "cHJhZ21h":
+      - !binary |-
+        bm8tY2FjaGU=
+      !binary "Y2FjaGUtY29udHJvbA==":
+      - !binary |-
+        bm8tY2FjaGU=
+      !binary "ZXhwaXJlcw==":
+      - !binary |-
+        VGh1LCAwMSBKYW4gMTk3MCAwMDowMDowMCBHTVQ=
+      !binary "Y29udGVudC10eXBl":
+      - !binary |-
+        YXBwbGljYXRpb24vanNvbjtjaGFyc2V0PXV0Zi04
+      !binary "Y29udGVudC1sZW5ndGg=":
+      - !binary |-
+        ODAz
+      !binary "ZGF0ZQ==":
+      - !binary |-
+        TW9uLCAxMCBEZWMgMjAxMiAxNjo0MjowMCBHTVQ=
+      !binary "c2VydmVy":
+      - !binary |-
+        WkdT
+    body: ! "{\"response\":{\"result\":{\"Contacts\":{\"row\":{\"no\":\"1\",\"FL\":[{\"content\":\"232068000001741001\",\"val\":\"CONTACTID\"},{\"content\":\"232068000000035003\",\"val\":\"SMOWNERID\"},{\"content\":\"Nicholas
+      Martin\",\"val\":\"Contact Owner\"},{\"content\":\"Johnny\",\"val\":\"First
+      Name\"},{\"content\":\"Depp\",\"val\":\"Last Name\"},{\"content\":\"232068000000035003\",\"val\":\"SMCREATORID\"},{\"content\":\"Nicholas
+      Martin\",\"val\":\"Created By\"},{\"content\":\"232068000000035003\",\"val\":\"MODIFIEDBY\"},{\"content\":\"Nicholas
+      Martin\",\"val\":\"Modified By\"},{\"content\":\"2012-12-10 16:39:23\",\"val\":\"Created
+      Time\"},{\"content\":\"2012-12-10 16:39:23\",\"val\":\"Modified Time\"},{\"content\":\"false\",\"val\":\"Email
+      Opt Out\"},{\"content\":\"2012-12-10 16:39:23\",\"val\":\"Last Activity Time\"},{\"content\":\"false\",\"val\":\"Left
+      Company\"}]}}},\"uri\":\"/crm/private/json/Contacts/getRecordById\"}}\r\n"
     http_version: '1.1'
