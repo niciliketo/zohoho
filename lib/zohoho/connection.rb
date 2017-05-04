@@ -21,12 +21,12 @@ module Zohoho
       case http_method
       when :get
         res = self.class.get(url, :query => query).parsed_response
-        res = res.to_json if res.kind_of?(Hash)
+        res = res.to_json if res.kind_of?(HTTParty::Response) || res.kind_of?(Hash)
         raw = JSON.parse(res)
         res = parse_raw_get(raw, entry)
       when :post
         res = self.class.post(url, :body => query)
-        res = res.to_json if res.kind_of?(Hash)
+        res = res.to_json if res.is_a?(HTTParty::Response) || res.is_a?(Hash)
         raw = JSON.parse(res)
         res = parse_raw_post(raw)
       else
@@ -34,7 +34,7 @@ module Zohoho
       end
       if ((res.class == Hash) && res['error'])
         parse_error(res, query)
-      end 
+      end
       return res
     end
 
@@ -42,9 +42,9 @@ module Zohoho
 
     def parse_raw_get(raw, entry)
       if raw['response']['result'].nil?
-        return_value =  [] 
+        return_value =  []
       elsif !raw['response']['error'].nil?
-        return_value = raw['response'] 
+        return_value = raw['response']
       else
         rows = raw['response']['result'][entry]['row']
         rows = [rows] unless rows.class == Array
