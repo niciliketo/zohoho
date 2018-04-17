@@ -4,7 +4,8 @@ module Zohoho
 
   class Connection
     include HTTParty
-
+    # Next line can help with debugging
+    # debug_output $stdout
     attr_reader :auth_token
 
     def initialize(service_name, auth_token)
@@ -72,11 +73,9 @@ module Zohoho
       raise error
     end
 
-
     def raw_to_hash(raw)
-      raw.map! {|r| [r['val'], r['content']]}
+      raw.map! { |r| [r['val'], r['content']] }
       Hash[raw]
     end
-
   end
 end
