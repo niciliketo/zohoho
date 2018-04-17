@@ -45,12 +45,19 @@ module Zohoho
       }
       leads.first
     end
-    def add_object(zObject)
-      record = @conn.call(zObject.data_name, 'insertRecords', {:xmlData => zObject.xmlData, :newFormat => 1, :wfTrigger=>'true'}, :post)
+
+    def add_object(z_object, params = {})
+      data = { xmlData: z_object.xmlData, newFormat: 1, wfTrigger: 'true' }
+             .merge(params)
+      record = @conn.call(z_object.data_name, 'insertRecords', data, :post)
       record['Id']
     end
-    def update_object(id, zObject)
-      record = @conn.call(zObject.data_name, 'updateRecords', {:id => id, :xmlData => zObject.xmlData, :newFormat => 1, :wfTrigger=>'true'}, :post)
+
+    def update_object(id, z_object, params = {})
+      data = { id: id, xmlData: z_object.xmlData, newFormat: 1,
+               wfTrigger: 'true' }
+             .merge(params)
+      record = @conn.call(z_object.data_name, 'updateRecords', data, :post)
       record['Id']
     end
     def add_contact(name)
