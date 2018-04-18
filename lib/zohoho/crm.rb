@@ -48,7 +48,7 @@ module Zohoho
 
     def add_object(z_object, params = {})
       data = { xmlData: z_object.xmlData, newFormat: 1, wfTrigger: 'true' }
-             .merge(params)
+      data.merge!(params) if params.instance_of? Hash
       record = @conn.call(z_object.data_name, 'insertRecords', data, :post)
       record['Id']
     end
@@ -56,7 +56,7 @@ module Zohoho
     def update_object(id, z_object, params = {})
       data = { id: id, xmlData: z_object.xmlData, newFormat: 1,
                wfTrigger: 'true' }
-             .merge(params)
+      data.merge!(params) if params.instance_of? Hash
       record = @conn.call(z_object.data_name, 'updateRecords', data, :post)
       record['Id']
     end
