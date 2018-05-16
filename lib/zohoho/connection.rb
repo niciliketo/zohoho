@@ -13,6 +13,8 @@ module Zohoho
     end
 
     def zoho_uri
+      # Next line will switch to use sandbox for testing
+      # zoho_uri = "https://crmsandbox.zoho.com/#{@service_name.downcase}/private/json"
       zoho_uri = "https://#{@service_name.downcase}.zoho.com/#{@service_name.downcase}/private/json"
     end
 
