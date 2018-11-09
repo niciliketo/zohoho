@@ -7,8 +7,8 @@ module Zohoho
   class Crm
     include HTTParty
 
-    def initialize(auth_token)
-      @conn = Zohoho::Connection.new 'CRM', auth_token
+    def initialize(auth_token, sandbox = false)
+      @conn = Zohoho::Connection.new('CRM', auth_token, sandbox)
     end
 
     def contact_with_name(name)

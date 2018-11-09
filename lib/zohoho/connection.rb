@@ -8,14 +8,14 @@ module Zohoho
     # debug_output $stdout
     attr_reader :auth_token
 
-    def initialize(service_name, auth_token)
-      @service_name, @auth_token = service_name, auth_token
+    def initialize(service_name, auth_token, sandbox)
+      @service_name = service_name
+      @auth_token = auth_token
+      @sandbox = sandbox
     end
 
     def zoho_uri
-      # Next line will switch to use sandbox for testing
-      # zoho_uri = "https://crmsandbox.zoho.com/#{@service_name.downcase}/private/json"
-      zoho_uri = "https://#{@service_name.downcase}.zoho.com/#{@service_name.downcase}/private/json"
+      "https://#{@service_name.downcase}#{'sandbox' if @sandbox}.zoho.com/#{@service_name.downcase}/private/json"
     end
 
     def call(entry, api_method, query = {}, http_method = :get)
