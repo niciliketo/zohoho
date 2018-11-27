@@ -1,5 +1,17 @@
 module Zohoho
   class ZohoObject < Hash
+    DEFAULT_FIELDS = []
+
+    def initialize(elements = {})
+      # The default fields are expected by Zoho
+      DEFAULT_FIELDS.each do |field|
+        self[field] = elements.delete(field) || ''
+      end
+      # It is possible to pass arbitrary additional elements to an object,
+      # which will populate custom fields.
+      elements.each { |key, value| self[key] = value } unless elements.empty?
+    end
+
     def xmlData
       parse_data
     end
