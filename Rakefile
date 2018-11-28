@@ -20,7 +20,7 @@ Jeweler::Tasks.new do |gem|
   gem.summary = %Q{Simple interface to zoho api}
   gem.description = %Q{Simple interface to zoho api}
   gem.email = "jkentonwhite@gmail.com"
-  gem.authors = ["KentonWhite"]
+  gem.authors = ["KentonWhite", "NicholasMartin", "Xymist"]
   # dependencies defined in Gemfile
 end
 Jeweler::RubygemsDotOrgTasks.new
