@@ -1,4 +1,5 @@
 module Zohoho
+  # Represents a Contact, or an individual within the CRM.
   class Contact < ZohoObject
     DEFAULT_FIELDS = [
       'ACCOUNTID', 'Contact Owner', 'Lead Source', 'First Name', 'Last Name',
@@ -11,10 +12,14 @@ module Zohoho
       'Email Opt Out', 'Secondary Email', 'Website'
     ].freeze
 
-    def initialize(h ={})
-      @@myFields.each do |f|
-        self[f] = h[f] ||''
+    def initialize(elements = {})
+      # The default fields are expected by Zoho
+      DEFAULT_FIELDS.each do |field|
+        self[field] = elements.delete(field) || ''
       end
+      # It is possible to pass arbitrary additional elements to a contact, which
+      # will populate custom fields.
+      elements.each { |key, value| self[key] = value } unless elements.empty?
     end
   end
 end
