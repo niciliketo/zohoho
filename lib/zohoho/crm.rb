@@ -15,7 +15,7 @@ module Zohoho
       first_name, last_name = parse_name(name)
       contacts = find_contacts_by_last_name(last_name)
       contacts.select! do |c|
-        c['First Name'] = '' if c['First Name'].nil?
+        c['First Name'] ||= ''
         first_name.match(c['First Name'])
       end
       contacts.first

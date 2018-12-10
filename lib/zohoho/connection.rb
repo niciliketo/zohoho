@@ -4,9 +4,6 @@ module Zohoho
 
   class Connection
     include HTTParty
-    # Next line can help with debugging
-    # debug_output $stdout
-    attr_reader :auth_token
 
     def initialize(service_name, auth_token, sandbox)
       @service_name = service_name
@@ -20,7 +17,7 @@ module Zohoho
     end
 
     def call(entry, api_method, query = {}, http_method = :get)
-      query[:authtoken] = auth_token
+      query[:authtoken] = @auth_token
       query[:scope] = "#{@service_name.downcase}api"
       url = [zoho_uri, entry, api_method].join('/')
       case http_method

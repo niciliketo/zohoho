@@ -11,7 +11,7 @@ module Zohoho
     protected
 
     def parse_data
-      fl = map { |e| Hash['val', (e[0]), 'content', (e[1] || '')] }
+      fl = map { |entry| Hash['val', (entry[0]), 'content', (entry[1] || '')] }
       row = Hash['no', '1', 'FL', fl]
       data = Hash['row', row]
       XmlSimple.xml_out(data, RootName: data_name)
