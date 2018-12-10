@@ -48,3 +48,5 @@ pkg
 
 # For RVM
 .rvmrc
+
+.byebug_history

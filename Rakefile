@@ -17,9 +17,9 @@ Jeweler::Tasks.new do |gem|
   gem.license = 'MIT'
   gem.summary = %(Simple interface to zoho api)
   gem.description = %(Simple interface to zoho api)
-  gem.email = 'jkentonwhite@gmail.com'
+  gem.email = %w[jkentonwhite@gmail.com, nicholas.martin@marketdojo.com]
   gem.authors = %w[KentonWhite NicholasMartin Xymist]
-  # dependencies defined in Gemfile
+  gem.version = '4.1.0'
 end
 Jeweler::RubygemsDotOrgTasks.new
 
