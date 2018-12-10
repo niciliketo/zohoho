@@ -4,80 +4,77 @@
 # -*- encoding: utf-8 -*-
 
 Gem::Specification.new do |s|
-  s.name = %q{zohoho}
-  s.version = "0.3.3"
+  s.name = 'zohoho'
+  s.version = '0.4.0'
 
-  s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
-  s.authors = ["KentonWhite", "NicholasMartin"]
-  s.date = %q{2018-05-16}
-  s.description = %q{Simple interface to zoho api}
-  s.email = %q{nicholas.martin@marketdojo.com}
+  s.required_rubygems_version = Gem::Requirement.new('>= 0') if s.respond_to? :required_rubygems_version=
+  s.authors = %w[KentonWhite NicholasMartin]
+  s.date = '2018-05-16'
+  s.description = 'Simple interface to zoho api'
+  s.email = 'nicholas.martin@marketdojo.com'
   s.extra_rdoc_files = [
-    "LICENSE.txt",
-    "README.rdoc"
+    'LICENSE.txt',
+    'README.rdoc'
   ]
   s.files = [
-    ".autotest",
-    ".document",
-    "Gemfile",
-    "Gemfile.lock",
-    "LICENSE.txt",
-    "README.rdoc",
-    "Rakefile",
-    "VERSION",
-    "autotest/discover.rb",
-    "lib/zohoho.rb",
-    "lib/zohoho/account.rb",
-    "lib/zohoho/authentication.rb",
-    "lib/zohoho/connection.rb",
-    "lib/zohoho/contact.rb",
-    "lib/zohoho/crm.rb",
-    "lib/zohoho/lead.rb",
-    "lib/zohoho/zoho_object.rb",
-    "spec/connection_spec.rb",
-    "spec/crm_spec.rb",
-    "spec/fixtures/vcr_cassettes/connection/call.yml",
-    "spec/fixtures/vcr_cassettes/crm/add_contact.yml",
-    "spec/fixtures/vcr_cassettes/crm/add_complicated_contact.yml",
-    "spec/fixtures/vcr_cassettes/crm/contact.yml",
-    "spec/fixtures/vcr_cassettes/crm/contact_single.yml",
-    "spec/fixtures/vcr_cassettes/crm/note.yml",
-    "spec/spec_helper.rb",
-    "zohoho.gemspec"
+    '.autotest',
+    '.document',
+    'Gemfile',
+    'Gemfile.lock',
+    'LICENSE.txt',
+    'README.rdoc',
+    'Rakefile',
+    'VERSION',
+    'autotest/discover.rb',
+    'lib/zohoho.rb',
+    'lib/zohoho/account.rb',
+    'lib/zohoho/authentication.rb',
+    'lib/zohoho/connection.rb',
+    'lib/zohoho/contact.rb',
+    'lib/zohoho/crm.rb',
+    'lib/zohoho/lead.rb',
+    'lib/zohoho/zoho_object.rb',
+    'spec/connection_spec.rb',
+    'spec/crm_spec.rb',
+    'spec/fixtures/vcr_cassettes/connection/call.yml',
+    'spec/fixtures/vcr_cassettes/crm/add_contact.yml',
+    'spec/fixtures/vcr_cassettes/crm/add_complicated_contact.yml',
+    'spec/fixtures/vcr_cassettes/crm/contact.yml',
+    'spec/fixtures/vcr_cassettes/crm/contact_single.yml',
+    'spec/fixtures/vcr_cassettes/crm/note.yml',
+    'spec/spec_helper.rb',
+    'zohoho.gemspec'
   ]
-  s.homepage = %q{http://github.com/kwhite/zohoho}
-  s.licenses = ["MIT"]
-  s.require_paths = ["lib"]
-  s.rubygems_version = %q{1.5.2}
-  s.summary = %q{Simple interface to zoho api}
+  s.homepage = 'http://github.com/kwhite/zohoho'
+  s.licenses = ['MIT']
+  s.require_paths = ['lib']
+  s.rubygems_version = '1.5.2'
+  s.summary = 'Simple interface to zoho api'
 
-  if s.respond_to? :specification_version then
+  if s.respond_to? :specification_version
     s.specification_version = 3
 
-    if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
-      s.add_runtime_dependency(%q<httparty>, [">= 0"])
-      s.add_runtime_dependency(%q<json>, [">= 0"])
-      s.add_runtime_dependency(%q<xml-simple>, [">= 0"])
-      s.add_development_dependency(%q<rspec>, [">= 0"])
-      s.add_development_dependency(%q<bundler>, ["~> 1.0.0"])
-      s.add_development_dependency(%q<jeweler>, ["~> 1.6.0"])
-      s.add_development_dependency(%q<rcov>, [">= 0"])
+    if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0')
+      s.add_runtime_dependency('httparty', ['>= 0'])
+      s.add_runtime_dependency('json', ['>= 0'])
+      s.add_runtime_dependency('xml-simple', ['>= 0'])
+      s.add_development_dependency('bundler', ['~> 1.0.0'])
+      s.add_development_dependency('jeweler', ['~> 1.6.0'])
+      s.add_development_dependency('rspec', ['>= 0'])
     else
-      s.add_dependency(%q<httparty>, [">= 0"])
-      s.add_dependency(%q<json>, [">= 0"])
-      s.add_dependency(%q<xml-simple>, [">= 0"])
-      s.add_dependency(%q<rspec>, [">= 0"])
-      s.add_dependency(%q<bundler>, ["~> 1.0.0"])
-      s.add_dependency(%q<jeweler>, ["~> 1.6.0"])
-      s.add_dependency(%q<rcov>, [">= 0"])
+      s.add_dependency('bundler', ['~> 1.0.0'])
+      s.add_dependency('httparty', ['>= 0'])
+      s.add_dependency('jeweler', ['~> 1.6.0'])
+      s.add_dependency('json', ['>= 0'])
+      s.add_dependency('rspec', ['>= 0'])
+      s.add_dependency('xml-simple', ['>= 0'])
     end
   else
-    s.add_dependency(%q<httparty>, [">= 0"])
-    s.add_dependency(%q<json>, [">= 0"])
-    s.add_dependency(%q<xml-simple>, [">= 0"])
-    s.add_dependency(%q<rspec>, [">= 0"])
-    s.add_dependency(%q<bundler>, ["~> 1.0.0"])
-    s.add_dependency(%q<jeweler>, ["~> 1.6.0"])
-    s.add_dependency(%q<rcov>, [">= 0"])
+    s.add_dependency('httparty', ['>= 0'])
+    s.add_dependency('json', ['>= 0'])
+    s.add_dependency('xml-simple', ['>= 0'])
+    s.add_dependency('xml-simple', ['>= 0'])
+    s.add_dependency('xml-simple', ['>= 0'])
+    s.add_dependency('xml-simple', ['>= 0'])
   end
 end

@@ -1,16 +1,20 @@
 # -------------
 # Example: Prints out all tasks
 # -------------
-# Gets all tasks and prints them to the screen. 
+# Gets all tasks and prints them to the screen.
 
-$LOAD_PATH.unshift(File.dirname(__FILE__) + '/../lib') unless $LOAD_PATH.include?(File.dirname(__FILE__) + '/../lib')
-require "rubygems"
-require "zohoho"
-require "pp"
+unless $LOAD_PATH.include?(File.dirname(__FILE__) + '/../lib')
+  $LOAD_PATH.unshift(File.dirname(__FILE__) + '/../lib')
+end
 
-USERNAME, PASSWORD, ZOHO_KEY = "aisha.fenton", "epson123", "wcRImoTaNxWDAgM-LlfsbhRqsC8Zcu03kQaMGWeIdlI$"
+require 'rubygems'
+require 'zohoho'
+require 'pp'
+
+USERNAME = 'aisha.fenton'.freeze
+PASSWORD = 'epson123'.freeze
+ZOHO_KEY = 'wcRImoTaNxWDAgM-LlfsbhRqsC8Zcu03kQaMGWeIdlI$'.freeze
 
 @crm = Zohoho::Crm.new(USERNAME, PASSWORD, ZOHO_KEY)
 
 pp @crm.tasks
-

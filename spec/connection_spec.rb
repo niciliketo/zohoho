@@ -1,18 +1,17 @@
-require File.expand_path(File.dirname(__FILE__) + '/spec_helper')
+require 'rails_helper'
 
-describe "Zohoho::Connection" do
-
+describe 'Zohoho::Connection' do
   before :each do
-    @apikey = "dummy_key_123"
-    @conn = Zohoho::Connection.new('CRM', @apikey)
-    vcr_config 'connection'
+    @apikey = 'dummy_api_key'
+    @conn = Zohoho::Connection.new('CRM', @apikey, true)
+    vcr_configure('connection')
   end
 
-  it "should make a simple call" do
-    VCR.use_cassette('call', :record => :new_episodes) do
+  it 'should make a simple call' do
+    VCR.use_cassette('call', record: :new_episodes) do
       @result = @conn.call('Contacts', 'getRecords')
     end
 
-    @result.size.should == 20
+    expect(@result.size).to eq(20)
   end
 end

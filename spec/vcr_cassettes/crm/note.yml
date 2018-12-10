@@ -1,0 +1,60 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://crmsandbox.zoho.com/crm/private/json/Notes/insertRecords
+    body:
+      encoding: UTF-8
+      string: xmlData=%3CNotes%3E%0A%20%20%3Crow%20no%3D%221%22%3E%0A%20%20%20%20%3CFL%20val%3D%22entityId%22%3E2033736000000879001%3C%2FFL%3E%0A%20%20%20%20%3CFL%20val%3D%22Note%20Title%22%3ENote%20to%20self%3C%2FFL%3E%0A%20%20%20%20%3CFL%20val%3D%22Note%20Content%22%3EDon%26apos%3Bt%20do%20that%20again%3C%2FFL%3E%0A%20%20%3C%2Frow%3E%0A%3C%2FNotes%3E%0A&newFormat=1&authtoken=dummy_api_key&scope=crmapi
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - ZGS
+      Date:
+      - Mon, 10 Dec 2018 16:43:02 GMT
+      Content-Type:
+      - application/jsonp;charset=utf-8
+      Content-Length:
+      - '392'
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - c026b7d48a=db7b360f737a64f6b1939c7719830dd7; Path=/
+      - crmcsr=61d43447-a195-42d1-8010-523c1d31c858;path=/;Secure;priority=high
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - '1'
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - no-cache
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 GMT
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Download-Options:
+      - noopen
+      Strict-Transport-Security:
+      - max-age=15768000
+    body:
+      encoding: UTF-8
+      string: '{"response":{"result":{"recorddetail":{"FL":[{"val":"Id","content":"2033736000000881001"},{"val":"Created
+        Time","content":"2018-12-10 16:43:02"},{"val":"Modified Time","content":"2018-12-10
+        16:43:02"},{"val":"Created By","content":"Martin Nicholas"},{"val":"Modified
+        By","content":"Martin Nicholas"}]},"message":"Record(s) added successfully"},"uri":"/crm/private/json/Notes/insertRecords"}}
+
+'
+    http_version:
+  recorded_at: Mon, 10 Dec 2018 16:43:02 GMT
+recorded_with: VCR 4.0.0

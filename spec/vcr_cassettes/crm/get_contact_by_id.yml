@@ -1,0 +1,71 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://crmsandbox.zoho.com/crm/private/json/Contacts/getRecordById?authtoken=dummy_api_key&id=2033736000000879001&scope=crmapi&selectColumns=All
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - ZGS
+      Date:
+      - Mon, 10 Dec 2018 16:45:29 GMT
+      Content-Type:
+      - application/jsonp;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - c026b7d48a=00ad0429837d682dadcd1fa2d808aa64; Path=/
+      - crmcsr=a03b63d3-0b85-4ae3-86d3-7c352ffa5838;path=/;Secure;priority=high
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - '1'
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - no-cache
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 GMT
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Download-Options:
+      - noopen
+      Vary:
+      - Accept-Encoding
+      Strict-Transport-Security:
+      - max-age=15768000
+    body:
+      encoding: ASCII-8BIT
+      string: '{"response":{"result":{"Contacts":{"row":{"no":"1","FL":[{"val":"CONTACTID","content":"2033736000000879001"},{"val":"SMOWNERID","content":"2033736000000153004"},{"val":"Contact
+        Owner","content":"Martin Nicholas"},{"val":"First Name","content":"Johnny"},{"val":"Last
+        Name","content":"Depp"},{"val":"SMCREATORID","content":"2033736000000153004"},{"val":"Created
+        By","content":"Martin Nicholas"},{"val":"MODIFIEDBY","content":"2033736000000153004"},{"val":"Modified
+        By","content":"Martin Nicholas"},{"val":"Created Time","content":"2018-12-10
+        16:18:23"},{"val":"Modified Time","content":"2018-12-10 16:18:23"},{"val":"Full
+        Name","content":"Johnny Depp"},{"val":"Email Opt Out","content":"false"},{"val":"Last
+        Activity Time","content":"2018-12-10 16:43:02"},{"val":"Score","content":"0"},{"val":"Positive
+        Score","content":"0"},{"val":"Negative Score","content":"0"},{"val":"Positive
+        Touch Point Score","content":"0"},{"val":"Touch Point Score","content":"0"},{"val":"Negative
+        Touch Point Score","content":"0"},{"val":"Left Company","content":"false"},{"val":"Cost
+        per Click","content":"0"},{"val":"Cost per Conversion","content":"0"},{"val":"Inbound
+        Marketing Lead","content":"false"},{"val":"Superhost","content":"false"}]}}},"uri":"/crm/private/json/Contacts/getRecordById"}}
+
+'
+    http_version:
+  recorded_at: Mon, 10 Dec 2018 16:45:29 GMT
+recorded_with: VCR 4.0.0
