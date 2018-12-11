@@ -19,7 +19,7 @@ Jeweler::Tasks.new do |gem|
   gem.description = %(Simple interface to zoho api)
   gem.email = %w[jkentonwhite@gmail.com, nicholas.martin@marketdojo.com]
   gem.authors = %w[KentonWhite NicholasMartin Xymist]
-  gem.version = '4.1.0'
+  gem.version = '0.5.0'
 end
 Jeweler::RubygemsDotOrgTasks.new
 
