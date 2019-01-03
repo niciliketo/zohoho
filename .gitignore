@@ -1,4 +1,4 @@
-# rcov generated
+# Simplecov generated
 coverage
 
 # rdoc generated
@@ -48,3 +48,5 @@ pkg
 
 # For RVM
 .rvmrc
+
+.byebug_history

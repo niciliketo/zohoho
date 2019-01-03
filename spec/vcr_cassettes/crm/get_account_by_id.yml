@@ -1,0 +1,69 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://crmsandbox.zoho.com/crm/private/json/Accounts/getRecordById?authtoken=dummy_api_key&id=2033736000000197007&scope=crmapi&selectColumns=All
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - ZGS
+      Date:
+      - Mon, 10 Dec 2018 16:47:56 GMT
+      Content-Type:
+      - application/jsonp;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - c026b7d48a=db7b360f737a64f6b1939c7719830dd7; Path=/
+      - crmcsr=3066f756-5a9c-49b2-9572-50480c2068ce;path=/;Secure;priority=high
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - '1'
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - no-cache
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 GMT
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Download-Options:
+      - noopen
+      Vary:
+      - Accept-Encoding
+      Strict-Transport-Security:
+      - max-age=15768000
+    body:
+      encoding: ASCII-8BIT
+      string: '{"response":{"result":{"Accounts":{"row":{"no":"1","FL":[{"val":"ACCOUNTID","content":"2033736000000197007"},{"val":"SMOWNERID","content":"2033736000000153004"},{"val":"Account
+        Owner","content":"Martin Nicholas"},{"val":"Account Name","content":"Market
+        Dojo Ltd"},{"val":"Website","content":"www.marketdojo.com"},{"val":"Account
+        Type","content":"Customer"},{"val":"Ownership","content":"Private Sector -
+        Small"},{"val":"Industry","content":"Aerospace"},{"val":"Employees","content":"10"},{"val":"Annual
+        Revenue","content":"0"},{"val":"SMCREATORID","content":"2033736000000153004"},{"val":"Created
+        By","content":"Martin Nicholas"},{"val":"MODIFIEDBY","content":"2033736000000153004"},{"val":"Modified
+        By","content":"Martin Nicholas"},{"val":"Created Time","content":"2018-05-16
+        15:47:56"},{"val":"Modified Time","content":"2018-12-05 12:53:03"},{"val":"Last
+        Activity Time","content":"2018-12-05 12:00:37"},{"val":"IndustryMD","content":"Hospitality"},{"val":"Strategic
+        Account","content":"false"}]}}},"uri":"/crm/private/json/Accounts/getRecordById"}}
+
+'
+    http_version:
+  recorded_at: Mon, 10 Dec 2018 16:47:56 GMT
+recorded_with: VCR 4.0.0

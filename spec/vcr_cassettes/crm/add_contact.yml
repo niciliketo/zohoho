@@ -1,0 +1,60 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://crmsandbox.zoho.com/crm/private/json/Contacts/insertRecords
+    body:
+      encoding: UTF-8
+      string: xmlData=%3CContacts%3E%0A%20%20%3Crow%20no%3D%221%22%3E%0A%20%20%20%20%3CFL%20val%3D%22First%20Name%22%3EJohnny%3C%2FFL%3E%0A%20%20%20%20%3CFL%20val%3D%22Last%20Name%22%3EDepp%3C%2FFL%3E%0A%20%20%3C%2Frow%3E%0A%3C%2FContacts%3E%0A&newFormat=1&authtoken=dummy_api_key&scope=crmapi
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - ZGS
+      Date:
+      - Mon, 10 Dec 2018 16:18:24 GMT
+      Content-Type:
+      - application/jsonp;charset=utf-8
+      Content-Length:
+      - '395'
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - c026b7d48a=00ad0429837d682dadcd1fa2d808aa64; Path=/
+      - crmcsr=2f0e6743-0eb8-43bb-8c28-4fb22dd092f9;path=/;Secure;priority=high
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - '1'
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - no-cache
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 GMT
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Download-Options:
+      - noopen
+      Strict-Transport-Security:
+      - max-age=15768000
+    body:
+      encoding: UTF-8
+      string: '{"response":{"result":{"recorddetail":{"FL":[{"val":"Id","content":"2033736000000879001"},{"val":"Created
+        Time","content":"2018-12-10 16:18:23"},{"val":"Modified Time","content":"2018-12-10
+        16:18:23"},{"val":"Created By","content":"Martin Nicholas"},{"val":"Modified
+        By","content":"Martin Nicholas"}]},"message":"Record(s) added successfully"},"uri":"/crm/private/json/Contacts/insertRecords"}}
+
+'
+    http_version:
+  recorded_at: Mon, 10 Dec 2018 16:18:24 GMT
+recorded_with: VCR 4.0.0
